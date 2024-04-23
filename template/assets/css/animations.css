@@ -1,0 +1,90 @@
+
+/* Animation icon rotate: 
+    <div class="rotate-icon active">
+        <i class="left"></i>
+        <i class="right"></i>
+    </div>
+*/
+.rotate-icon{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    --icon-color: #000;
+    --width: 16px;
+    --height: 2px;
+    --translate: calc(0.25 * var(--width) - 0.25 * var(--height));
+}
+
+.rotate-icon .left{
+    position: absolute;
+    top: calc(50% - 0.5 * var(--height));
+    left: calc(50% - 0.5 * var(--width));
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--icon-color);
+    transition: all linear 0.5s;
+    transform: rotate(-90deg);
+}
+
+.rotate-icon .right{
+    position: absolute;
+    top: calc(50% - 0.5 * var(--height));
+    left: calc(50% - 0.5 * var(--width));
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--icon-color);
+    transition: all linear 0.5s;
+}
+
+.rotate-icon.active .left{
+    transform: rotate(-135deg) translate(var(--translate), calc(0px - var(--translate)));
+}
+
+.rotate-icon.active .right{
+    transform: rotate(-45deg) translate(var(--translate), var(--translate));
+}
+/* End: Animation icon rotage */
+
+
+/* Animation text-strock: 
+    <h1 class="text-stroke">This is title</h1>
+*/
+.text-stroke {
+    font-size: 5rem;
+    font-family: 'Gilroy-SemiBold';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--bg-semi-light);
+    color: transparent;
+    transition: all linear 0.5s;
+}
+
+.text-stroke:hover {
+    -webkit-text-stroke-color: transparent;
+    color: #fff;
+}
+/* End: Animation text-strock */
+
+
+/* Animation filter image black and white 
+    <img class="img-grayscale" src="./img/bg2.jpg" alt="black and white image">
+*/
+img.img-grayscale{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%);
+    transition: all linear 0.25s;
+    cursor: pointer;
+}
+
+img.img-grayscale:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0); 
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    transform: scale(1.05);
+}
+/* End: Animation filter image black and white  */

@@ -1,0 +1,30 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-yellow-color: #f0a900;
+    --main-black-color: #111812;
+    --main-text-color: #595959;
+    --main-bg-color: #fdfffc;
+    --bg-semi-light: #f8f9fa;
+    --bg-header: #fdfffc4d;
+    --bg-banner: #f0a90033;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}

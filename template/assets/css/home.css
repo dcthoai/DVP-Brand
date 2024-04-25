@@ -181,6 +181,7 @@ header .header .header__nav .header__nav-link a{
 }
 
 .story .content__about{
+    width: fit-content;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -196,7 +197,9 @@ header .header .header__nav .header__nav-link a{
 }
 
 .story .content__about .content__about-icon{
+    color: var(--main-black-color);
     padding: 0.625rem 1rem;
+    padding-top: 0.875rem;
     transition: all linear 0.25s;
 }
 
@@ -270,6 +273,10 @@ header .header .header__nav .header__nav-link a{
     color: var(--main-yellow-color);
 }
 
+.expertise .service__item .accordion-button .plus-rotate-icon{
+    margin-right: 4rem;
+}
+
 .expertise .service__item .carousel-inner{
     width: 25.625rem;
 }
@@ -285,10 +292,379 @@ header .header .header__nav .header__nav-link a{
     vertical-align: middle;
 }
 
-.plus-rotate-icon{
-    margin-right: 4rem;
+/* Projects */
+.projects{
+    padding-bottom: 8.75rem;
 }
 
+.projects .projects__content{
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.projects .project{
+    width: 25.625rem;
+    height: 25.625rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects .project .project__img{
+    width: 25.625rem;
+    height: 25.625rem;
+}
+
+.projects .project .project__img img{
+    width: 26rem;
+    height: 26rem;
+}
+
+.projects .project .project__description{
+    width: 100%;
+    position: absolute;
+    padding: 1rem;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all linear 0.25s;
+}
+
+.projects .project .project__description .project__description-text{
+    color: var(--bg-semi-light);
+    font-family: 'Gilroy-SemiBold';
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    flex: 1;
+    margin-right: 0.5rem;
+    transition: all linear 0.25s;
+}
+
+.projects .project .project__description .project__description-icon{
+    padding: 0.625rem 0.375rem;
+    width: 3.5rem;
+    position: relative;
+    align-self: flex-end;
+    transition: all linear 0.25s;
+}
+
+.projects .project .project__description-icon .icon-line{
+    width: 0;
+    height: 0.125rem;
+    background-color: var(--bg-semi-light);
+    transition: all linear 0.25s;
+    position: absolute;
+    top: calc(50% - 0.0625rem);
+    left: 0.875rem;
+    z-index: 10000;
+}
+
+.projects .project .project__description-icon .fa-angle-right{
+    opacity: 0;
+    color: var(--bg-semi-light);
+    transition: all linear 0.25s;
+    width: 1rem;
+    height: 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 0.46875rem);
+    right: 0.375rem;
+}
+
+.projects .project .project-link:hover .project__description{
+    left: 0.5rem;
+    bottom: 0.75rem;
+}
+
+.projects .project .project-link:hover img.img-grayscale{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0); 
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+.projects .project .project-link:hover .project__description-icon .icon-line{
+    width: 1.75rem;
+}
+
+.projects .project .project-link:hover .project__description-icon .fa-angle-right{
+    opacity: 1;
+}
+
+.projects .projects__link{
+    width: 12.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .projects__link .projects__link-text{
+    font-family: 'Gilroy-Regular';
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--main-black-color);
+    padding: 0.625rem;
+    transition: all linear 0.25s;
+}
+
+.projects .projects__link .projects__link-icon{
+    color: var(--main-black-color);
+    padding: 0.625rem 1rem;
+    padding-top: 0.875rem;
+    transition: all linear 0.25s;
+}
+
+.projects .projects__link:hover .projects__link-text{
+    color: var(--main-yellow-color);
+}
+
+.projects .projects__link:hover .projects__link-icon{
+    transform: translateX(0.375rem);
+    color: var(--main-yellow-color);
+}
+
+/* Partners */
 .partners{
     background-color: var(--main-yellow-color);
+    padding-top: 0;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.partners .partners__wrapper{
+    width: 100%;
+    overflow: auto;
+    scrollbar-gutter: none;
+}
+
+/* Hide scrollbar */
+.partners .partners__wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.partners .partners__wrapper::-webkit-scrollbar-thumb {
+    display: none;
+}
+/* End: Hide scrollbar */
+
+.partners .partners__wrapper .partners__wrapper-links{
+    display: flex;
+    align-items: center;
+    height: 13.125rem;
+    white-space: nowrap;
+}
+
+.partners .partners__wrapper .brand{
+    flex: 0 0 auto;
+    width: 12.5rem;
+    height: 7.5rem;
+    margin: 0 1.875rem;
+    display: inline-block;
+}
+
+.partners .partners__wrapper .brand:first-child{
+    margin-left: 0;
+}
+
+.partners .partners__wrapper .brand:last-child{
+    margin-right: 0;
+}
+
+.partners .partners__wrapper .brand img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.partners .partners__dots{
+    width: 100%;
+    height: 1.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners .partners__dots .dot{
+    margin: 0 0.5rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners .partners__dots .dot:first-child{
+    margin-left: 0;
+}
+
+.partners .partners__dots .dot:last-child{
+    margin-right: 0;
+}
+
+.partners .partners__dots .dot.active{
+    background-color: var(--main-bg-color);
+    opacity: 0.3;
+}
+
+.partners .partners__dots .dot.active .dot-inner{
+    background-color: transparent;
+}
+
+.partners .partners__dots .dot .dot-inner{
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    opacity: 0.3;
+}
+
+/* Footer */
+.footer{
+    border-top: 0.0625rem solid var(--bg-semi-light);
+    background-color: var(--main-yellow-color);
+    color: var(--bg-semi-light);
+    padding-top: 0;
+}
+
+.footer a{
+    color: var(--bg-semi-light);
+}
+
+.footer .footer__wrapper{
+    padding: 3rem 0;
+}
+
+.footer .info{
+    margin: 0 0.9375rem;
+    width: 25.625rem;
+    height: 17.5rem;
+    flex: 0 0 auto;
+}
+
+.footer .info:first-child{
+    margin-left: 0;
+}
+
+.footer .info:last-child{
+    margin-right: 0;
+}
+
+.footer .info__header .info__header-logo{
+    font-family: 'Gilroy-Bold';
+    font-size: 4rem;
+    line-height: 5.5rem;
+    letter-spacing: 2%;
+    margin-bottom: 0;
+}
+
+.footer .info .heading{
+    font-size: 2.375rem;
+    line-height: 3.5rem;
+    font-family: 'Gilroy-Bold';
+    margin-bottom: 0;
+}
+
+.footer .info:first-child .info__content{
+    margin-top: 1.5rem;
+}
+
+.footer .info__content{
+    margin-top: 1rem;
+    width: 18.75rem;
+}
+
+.footer .info__content .text{
+    font-family: 'Gilroy-Regular';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0.25rem 0;
+}
+
+.footer .info__content .text .website-link{
+    height: 100%;
+    font-family: 'Gilroy-Regular';
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.footer .info__content .text:first-child{
+    margin-top: 0;
+}
+
+.footer .info__content .text:last-child{
+    margin-bottom: 0;
+}
+
+.footer .info__content.location__map{
+    height: 10,4375rem;
+}
+
+.footer .info__content .social-link{
+    display: block;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 1.5rem;
+    line-height: 1.125rem;
+    padding: 0 0.5rem;
+    margin: 0.625rem 0;
+    height: 1.6875rem;
+    width: fit-content;
+    position: relative;
+}
+
+.footer .info__content .social-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.125rem;
+    border-radius: 0.0625rem;
+    background-color: var(--bg-semi-light);
+    transition: all ease 0.2s;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer .info__content .social-link:hover::after{
+    width: calc(100% - 1rem);
+}
+
+.footer .info__content .social-link:first-child{
+    margin-top: 0;
+}
+
+.footer .info__content .social-link:last-child{
+    margin-bottom: 0;
+}
+
+.footer .address,
+.footer .location,
+.footer .connect{
+    padding-top: 2.5rem;
+}
+
+.copyright{
+    margin: 0 auto;
+    width: 120rem;
+    height: 1.75rem;
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+.copyright img{
+    margin-right: 1rem;
+}
+
+.copyright .copyright__text{
+    display: inline-block;
+    font-family: 'Gilroy-Regular';
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    color: var(--main-yellow-color);
 }

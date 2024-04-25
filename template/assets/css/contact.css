@@ -1,0 +1,66 @@
+.story .label{
+    width: 25.625rem;
+    padding-top: 1.25rem;
+    padding-right: 5rem;
+    padding-bottom: 6.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.story .contactHead{
+    margin-bottom: 0;
+}
+
+.story .label{
+    width: auto;
+    display: flex;
+}
+
+.story .label .label__text{
+    font-family: 'Gilroy-SemiBold';
+    font-size: 1.5rem;
+}
+
+.story .label .label__text:last-child{
+    margin-left: 1rem;
+}
+
+.story .label .label__icon{
+    width: 12.6875rem;
+    height: 0.0625rem;
+    margin-left: 1.625rem;
+    background-color: var(--main-black-color);
+}
+
+.story .contact_content{
+    padding-bottom: 5rem;
+}
+
+.story .contact_content .contact_content_head{
+    font-family: 'Gilroy-Bold';
+    font-size: 2.375rem;
+    margin-bottom: 2rem;
+}
+
+.story .contact_content .contact_content_text{
+    font-family: 'Gilroy-SemiBold';
+    font-size: 1.25rem;
+    margin-bottom: 4rem;
+}
+
+.story .contact_content .contact_content_info p{
+    font-family: 'Gilroy-Regular';
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.story .contact_content .info_contact{
+    margin-left: 1.875rem;
+}
+
+
+
+
+

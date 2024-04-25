@@ -38,6 +38,32 @@ header .header .header__nav .header__nav-link a{
     color: var(--bg-semi-light);
     font-family: 'Gilroy-Medium';
     font-size: 1.125rem;
+    position: relative;
+    display: block;
+    transition: all linear 0.25s;
+}
+
+header .header .header__nav .header__nav-link a::after{
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.125rem;
+    border-radius: 0.0625rem;
+    transition: all linear 0.25s;
+}
+
+header .header .header__nav .header__nav-link a:hover{
+    padding-bottom: 0.5rem;
+    color: var(--text-hover-header);
+}
+
+header .header .header__nav .header__nav-link a:hover::after{
+    width: 100%;
+    background-color: var(--text-hover-header);
 }
 
 /* Banner */
@@ -156,6 +182,7 @@ header .header .header__nav .header__nav-link a{
     width: 12.6875rem;
     height: 0.0625rem;
     margin-left: 1.625rem;
+    margin-top: 0.1875rem;
     background-color: var(--main-black-color);
 }
 

@@ -20,12 +20,8 @@ accordionButtons.forEach((button, index) => {
 
 // Animation move partners list by mouse move
 const scrollWrapper = document.querySelector('.scroll-wrapper');
-const scrollWrapperContent = scrollWrapper.querySelector('.scroll-wrapper__content');
-const minTranslateX = scrollWrapper.offsetWidth - scrollWrapperContent.offsetWidth;
-let mouseMoveX = 0;
-let isMouseDown = false;
 
-function getCurrentTranslateX(){
+function getCurrentTranslateX(scrollWrapperContent){
     let transformStyle = window.getComputedStyle(scrollWrapperContent).getPropertyValue("transform");
 
     if (transformStyle && transformStyle !== 'none') {
@@ -38,29 +34,36 @@ function getCurrentTranslateX(){
     }
 }
 
-scrollWrapper.addEventListener("mousedown", function (event) {
-    isMouseDown = true;
-    mouseMoveX = event.clientX;
-});
+if (scrollWrapper){
+    const scrollWrapperContent = scrollWrapper.querySelector('.scroll-wrapper__content');
+    const minTranslateX = scrollWrapper.offsetWidth - scrollWrapperContent.offsetWidth;
+    let mouseMoveX = 0;
+    let isMouseDown = false;
 
-scrollWrapper.addEventListener("mouseup", function () {
-    isMouseDown = false;
-});
-
-scrollWrapper.addEventListener('mouseleave', () => {
-    isMouseDown = false;
-});
-
-scrollWrapper.addEventListener("mousemove", function (e) {
-    if(isMouseDown){
-        let newMouseMoveX = e.clientX;
-        let translateX = newMouseMoveX - mouseMoveX + getCurrentTranslateX();
-
-        if (translateX >= minTranslateX && translateX <= 0) {
-            scrollWrapperContent.style.transform = `translateX(${translateX}px)`;
+    scrollWrapper.addEventListener("mousedown", function (event) {
+        isMouseDown = true;
+        mouseMoveX = event.clientX;
+    });
+    
+    scrollWrapper.addEventListener("mouseup", function () {
+        isMouseDown = false;
+    });
+    
+    scrollWrapper.addEventListener('mouseleave', () => {
+        isMouseDown = false;
+    });
+    
+    scrollWrapper.addEventListener("mousemove", function (e) {
+        if(isMouseDown){
+            let newMouseMoveX = e.clientX;
+            let translateX = newMouseMoveX - mouseMoveX + getCurrentTranslateX(scrollWrapperContent);
+    
+            if (translateX >= minTranslateX && translateX <= 0) {
+                scrollWrapperContent.style.transform = `translateX(${translateX}px)`;
+            }
+            // Cập nhật giá trị của mouseMoveX
+            mouseMoveX = newMouseMoveX;
         }
-        // Cập nhật giá trị của mouseMoveX
-        mouseMoveX = newMouseMoveX;
-    }
-});
+    });
+}
 // End: Animation scroll

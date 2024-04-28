@@ -27,6 +27,8 @@
     --bg-header: #fdfffc4d;
     --text-hover-header: #766d57;
     --sub-heading-color: #595959;
+    --sub-heading-color-20: rgb(89, 89, 89, 0.2);
+    --sub-heading-color-30: rgb(89, 89, 89, 0.3);
 }
 
 html {

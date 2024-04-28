@@ -1,0 +1,55 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+:root {
+    --main-yellow-color-10: rgba(240, 169, 0, 0.1);
+    --main-yellow-color-20: rgba(240, 169, 0, 0.2);
+    --main-yellow-color-30: rgba(240, 169, 0, 0.3);
+    --main-yellow-color-70: rgba(240, 169, 0, 0.7);
+    --main-yellow-color-100: #f0a900;
+    --main-black-color-10: rgba(17, 24, 18, 0.1);
+    --main-black-color-20: rgba(17, 24, 18, 0.2);
+    --main-black-color-30: rgba(17, 24, 18, 0.3);
+    --main-black-color-70: rgba(17, 24, 18, 0.7);
+    --main-black-color-100: #111812;
+    --main-bg-color-10: rgba(253, 255, 252, 0.1);
+    --main-bg-color-20: rgba(253, 255, 252, 0.2);
+    --main-bg-color-30: rgba(253, 255, 252, 0.3);
+    --main-bg-color-70: rgba(253, 255, 252, 0.7);
+    --main-bg-color-100: #fdfffc;
+
+    --bg-light: #f8f9fa;
+    --bg-header: #fdfffc4d;
+    --text-hover-header: #766d57;
+    --sub-heading-color: #595959;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+}
+
+body{
+    background-color: var(--main-bg-color-100);
+}

@@ -95,3 +95,19 @@
 .partners .scroll-wrapper .scroll-wrapper__content-item img:first-child{
     margin-bottom: 5rem;
 }
+
+/* Culture */
+.culture .culture__des{
+    margin-bottom: 4rem;
+}
+
+.culture .culture__des .culture__des-text{
+    font-family: 'Gilroy-Regular';
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: var(--main-black-color-100);
+}
+
+.culture .culture__img img{
+    aspect-ratio: 1/1;
+}

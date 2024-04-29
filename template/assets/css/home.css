@@ -2,13 +2,20 @@
 /* Banner */
 .banner .banner__text .banner__text-top,
 .banner .banner__text .banner__text-bot{
-    width: 48.375rem;
     height: 5.25rem;
 }
 
-.banner .banner__text .banner__text-bot .text-end{
-    width: 44.75rem;
-    margin: 0 auto;
+.banner .banner__text .banner__text-top{
+    padding-right: 6.25rem;
+}
+
+.banner .banner__text .banner__text-bot{
+    padding-right: 1.875rem;
+}
+
+.banner .banner__text .banner__text-top .text-stroke,
+.banner .banner__text .banner__text-bot .text-uppercase{
+    margin-right: 0.625rem;
 }
 
 /* Video autoplay */

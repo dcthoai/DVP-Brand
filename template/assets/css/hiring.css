@@ -1,4 +1,8 @@
 
+.banner .banner__text .text-stroke{
+    margin-right: 0.625rem;
+}
+
 /* Story */
 .story .story__content-img{
     width: 50%;

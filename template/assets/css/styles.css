@@ -338,7 +338,7 @@ header .header__nav .header__nav-link a:hover::after{
 
 .banner .banner__text{
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     z-index: 11;
     transform: translate(-50%, -50%);
@@ -351,10 +351,11 @@ header .header__nav .header__nav-link a:hover::after{
 .banner .banner__text .text-stroke{
     font-family: 'Gilroy-XBold';
     font-size: 5rem;
-    line-height: 5rem;
+    line-height: 5.25rem;
 }
 
-.banner .banner__text .text-uppercase{
+.banner .banner__text .text-uppercase,
+.banner .banner__text .text-capitalize:not(.text-stroke){
     font-family: 'Gilroy-XBold';
     font-size: 5rem;
     line-height: 5rem;

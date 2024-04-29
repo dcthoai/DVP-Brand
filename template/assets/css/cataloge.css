@@ -9,6 +9,14 @@ header {
     margin-top: 15rem;
 }
 
+.project .img-1{
+    aspect-ratio: 173/100;
+}
+
+.project .img-2{
+    aspect-ratio: 1/1;
+}
+
 .project .wrapper__header{
     margin-bottom: 5rem;
 }
@@ -43,7 +51,6 @@ header {
     line-height: 2.25rem;
     color: var(--main-black-color-100);
 }
-
 
 .project .project__des .project__des-text{
     font-family: 'Gilroy-Regular';

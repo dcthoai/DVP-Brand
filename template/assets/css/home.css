@@ -128,16 +128,7 @@
     margin-bottom: 5rem;
 }
 
-.work .work__content{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    overflow: hidden;
-}
-
 .work .work__content .project {
-    width: 25.625rem;
-    max-width: calc(25% - 1.375rem);
     aspect-ratio: 1/1;
     overflow: hidden;
     position: relative;

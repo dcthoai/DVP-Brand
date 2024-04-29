@@ -55,3 +55,102 @@ h1, h2, h3, h4, h5, h6{
 body{
     background-color: var(--main-bg-color-100);
 }
+
+.wrapper{
+    width: 108.125rem;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrapper-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.9375rem;
+}
+
+.wrapper.wrapper-top{
+    margin-top: 8.75rem;
+}
+
+.wrapper.wrapper-bottom{
+    margin-bottom: 8.75rem;
+}
+
+.wrapper .wrapper__header{
+    margin-bottom: 4rem;
+}
+
+.wrapper .wrapper__header .wrapper__header-heading{
+    font-family: 'Gilroy-Bold';
+    font-size: 4rem;
+    line-height: 5.5rem;
+    color: var(--main-black-color-100);
+}
+
+.wrapper .wrapper__header .wrapper__header-sub--heading{
+    height: 2.25rem;
+    font-family: 'Gilroy-Medium';
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: var(--sub-heading-color);
+}
+
+.rectangle-25{
+    width: 25.625rem;
+    max-width: calc(25% - 1.875rem);
+}
+
+.rectangle-50{
+    width: 53.125rem;
+    max-width: calc(50% - 1.875rem);
+}
+
+.rectangle-75{
+    width: 80.625rem;
+    max-width: calc(75% - 1.875rem);
+}
+
+.rectangle-100{
+    width: 108.125rem;
+    max-width: calc(100% - 1.875rem);
+}
+
+.rectangle-25,
+.rectangle-50,
+.rectangle-75,
+.rectangle-100{
+    margin: 0.9375rem;
+}
+
+.top{
+    margin-top: 0.9375rem;
+}
+
+.top-1{
+    margin-top: 1.875rem;
+}
+
+.bottom{
+    margin-bottom: 0.9375rem;
+}
+
+.bottom-1{
+    margin-bottom: 1.875rem;
+}
+
+.left{
+    margin-left: 0.9375rem;
+}
+
+.left-1{
+    margin-left: 1.875rem;
+}
+
+.right{
+    margin-right: 0.9375rem;
+}
+
+.right-1{
+    margin-right: 1.875rem;
+}

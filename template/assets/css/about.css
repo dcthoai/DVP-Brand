@@ -65,3 +65,33 @@
     color: var(--main-black-color-100);
 }
 
+/* Partners */
+.partners {
+    padding: 6.25rem 0;
+}
+
+.partners .partners__header{
+    margin-bottom: 4rem;
+}
+
+.partners .partners__header .partners__header-sub-heading{
+    font-family: 'Gilroy-Medium';
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: var(--bg-light);
+}
+
+.partners .partners__header .partners__header-heading{
+    font-family: 'Gilroy-Bold';
+    font-size: 4rem;
+    line-height: 5.5rem;
+    color: var(--bg-light);
+}
+
+.partners .scroll-wrapper {
+    padding: 2rem 0;
+}
+
+.partners .scroll-wrapper .scroll-wrapper__content-item img:first-child{
+    margin-bottom: 5rem;
+}

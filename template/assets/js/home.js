@@ -6,7 +6,7 @@ const bannerHeight = banner.offsetHeight;
 window.addEventListener("scroll", function() {
     let scrollY = window.scrollY;
 
-    if (scrollY > 0.75 * bannerHeight) {
+    if (scrollY > 0.5 * bannerHeight) {
         videoAutoPlay.play();
 
         videoAutoPlay.addEventListener('click', () => {
@@ -14,7 +14,7 @@ window.addEventListener("scroll", function() {
         })
     }
 
-    if (scrollY > bannerHeight + videoHeight || scrollY <= 0.75 * bannerHeight){
+    if (scrollY > bannerHeight + videoHeight || scrollY <= 0.5 * bannerHeight){
         videoAutoPlay.pause();
     }
 });

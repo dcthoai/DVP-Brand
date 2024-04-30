@@ -27,6 +27,7 @@
 .reels video{
     width: 100%;
     aspect-ratio: 16/9;
+    max-height: 100vh;
     object-fit: cover;
 }
 

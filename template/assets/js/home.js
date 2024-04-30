@@ -1,11 +1,12 @@
-
+const banner = document.querySelector('.banner');
 const videoAutoPlay = document.getElementById('video-auto-play');
 const videoHeight = videoAutoPlay.offsetHeight;
+const bannerHeight = banner.offsetHeight;
 
 window.addEventListener("scroll", function() {
     let scrollY = window.scrollY;
 
-    if (scrollY > 0.5 * videoHeight) {
+    if (scrollY > 0.75 * bannerHeight) {
         videoAutoPlay.play();
 
         videoAutoPlay.addEventListener('click', () => {
@@ -13,7 +14,7 @@ window.addEventListener("scroll", function() {
         })
     }
 
-    if (scrollY > 1.75 * videoHeight || scrollY <= 0.5 * videoHeight){
+    if (scrollY > bannerHeight + videoHeight || scrollY <= 0.75 * bannerHeight){
         videoAutoPlay.pause();
     }
 });

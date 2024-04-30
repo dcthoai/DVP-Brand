@@ -154,3 +154,19 @@ body{
 .right-1{
     margin-right: 1.875rem;
 }
+
+.project-25{
+    aspect-ratio: 1/1;
+}
+
+.project-50{
+    aspect-ratio: 1/1;
+}
+
+.project-75{
+    aspect-ratio: 129/85;
+}
+
+.project-100{
+    aspect-ratio: 173/100;
+}

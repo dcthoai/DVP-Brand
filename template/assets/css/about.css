@@ -15,6 +15,10 @@
 
 .story .story__content-img img{
     vertical-align: middle;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .story .story__content-text p{
@@ -114,6 +118,10 @@
 }
 
 /* Staff */
+.staff.wrapper {
+    overflow: unset;
+}
+
 .staff .staff__content .staff__content-item{
     padding: 1rem;
     background-color: var(--bg-light);

@@ -66,6 +66,10 @@
 }
 
 /* Partners */
+.partners .wrapper{
+    padding: 2rem 7.1825rem;
+}
+
 .partners {
     padding: 6.25rem 0;
 }
@@ -86,10 +90,6 @@
     font-size: 4rem;
     line-height: 5.5rem;
     color: var(--bg-light);
-}
-
-.partners .scroll-wrapper {
-    padding: 2rem 7.1825rem;
 }
 
 .partners .scroll-wrapper .scroll-wrapper__content-item img:first-child{

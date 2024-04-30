@@ -80,6 +80,10 @@ header {
 }
 
 /* Location map */
+.location.wrapper{
+    overflow-y: visible;
+}
+
 .location {
     aspect-ratio: 14/5;
 }
@@ -220,9 +224,9 @@ header {
 
 /* Contact form */
 .contact.wrapper{
-    width: 73.125rem;
+    width: 80.625rem;
     max-width: 100%;
-    padding: 6.25rem 0;
+    padding: 6.25rem 3.75rem;
 }
 
 .contact .quote{

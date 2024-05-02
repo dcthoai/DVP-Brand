@@ -3,14 +3,15 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 120" style="enable-background:new 0 0 200 120;" xml:space="preserve">
 <style type="text/css">
+	path{fill: #FFFFFF;}
 	.st0{fill:#FFFFFF;}
-	.st1{fill:#231F20;}
-	.st2{font-family:'Montserrat-Bold';}
-	.st3{font-size:28.1361px;}
-	.st4{letter-spacing:1;}
-	.st5{font-family:'Montserrat-SemiBold';}
-	.st6{font-size:8.9524px;}
-	.st7{fill:#AD5726;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Montserrat-Bold'; fill: #FFFFFF;}
+	.st3{font-size:28.1361px; fill: #FFFFFF;}
+	.st4{letter-spacing:1; fill: #FFFFFF;}
+	.st5{font-family:'Montserrat-SemiBold'; fill: #FFFFFF;}
+	.st6{font-size:8.9524px; fill: #FFFFFF;}
+	.st7{fill:#FFFFFF;}
 </style>
 <g>
 	<g>

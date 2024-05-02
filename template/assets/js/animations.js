@@ -1,18 +1,69 @@
 
-const serviceItemButton = document.querySelectorAll('.expertise .service__item .accordion .accordion-button');
-const plusRotateIcon = document.querySelectorAll('.expertise .service__item .accordion .plus-rotate-icon');
-const circleRotateIcon = document.querySelectorAll('.expertise .service__item .accordion .circle-rotate-icon');
+// Animation collapse accordion
+const accordionButtons = document.querySelectorAll('.accordion-button');
 
-serviceItemButton.forEach((button, index) => {
+accordionButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        if (serviceItemButton[index].classList.contains('active-custom')){
-            serviceItemButton[index].classList.remove('active-custom');
-            plusRotateIcon[index].classList.remove('active');
-            circleRotateIcon[index].classList.remove('active');
+        if (accordionButtons[index].classList.contains('plus-rotate-icon-active')) {
+            accordionButtons[index].classList.remove('plus-rotate-icon-active');
         } else {
-            serviceItemButton[index].classList.add('active-custom');
-            plusRotateIcon[index].classList.add('active');
-            circleRotateIcon[index].classList.add('active');
+            accordionButtons[index].classList.add('plus-rotate-icon-active');
+        }
+
+        if (accordionButtons[index].classList.contains('circle-rotate-icon-active')) {
+            accordionButtons[index].classList.remove('circle-rotate-icon-active');
+        } else {
+            accordionButtons[index].classList.add('circle-rotate-icon-active');
         }
     })
-})
+});
+
+// Animation move partners list by mouse move
+const scrollWrapper = document.querySelector('.scroll-wrapper');
+
+function getCurrentTranslateX(scrollWrapperContent){
+    let transformStyle = window.getComputedStyle(scrollWrapperContent).getPropertyValue("transform");
+
+    if (transformStyle && transformStyle !== 'none') {
+        let transformMatrix = transformStyle.split('(')[1].split(')')[0].split(',');
+        let translateX = parseInt(transformMatrix[4]);
+        
+        return translateX;
+    } else {
+        return 0;
+    }
+}
+
+if (scrollWrapper){
+    const scrollWrapperContent = scrollWrapper.querySelector('.scroll-wrapper__content');
+    const minTranslateX = scrollWrapper.offsetWidth - scrollWrapperContent.offsetWidth;
+    let mouseMoveX = 0;
+    let isMouseDown = false;
+
+    scrollWrapper.addEventListener("mousedown", function (event) {
+        isMouseDown = true;
+        mouseMoveX = event.clientX;
+    });
+    
+    scrollWrapper.addEventListener("mouseup", function () {
+        isMouseDown = false;
+    });
+    
+    scrollWrapper.addEventListener('mouseleave', () => {
+        isMouseDown = false;
+    });
+    
+    scrollWrapper.addEventListener("mousemove", function (e) {
+        if(isMouseDown){
+            let newMouseMoveX = e.clientX;
+            let translateX = newMouseMoveX - mouseMoveX + getCurrentTranslateX(scrollWrapperContent);
+    
+            if (translateX >= minTranslateX && translateX <= 0) {
+                scrollWrapperContent.style.transform = `translateX(${translateX}px)`;
+            }
+            // Cập nhật giá trị của mouseMoveX
+            mouseMoveX = newMouseMoveX;
+        }
+    });
+}
+// End: Animation scroll

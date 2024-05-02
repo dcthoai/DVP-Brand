@@ -56,13 +56,6 @@ body{
     background-color: var(--main-bg-color-100);
 }
 
-@media (max-width: 1729px){
-    .wrapper{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-}
-
 .wrapper{
     width: 108.125rem;
     max-width: 100%;
@@ -176,4 +169,21 @@ body{
 
 .project-100{
     aspect-ratio: 173/100;
+}
+
+@media (max-width: 1777px){
+    .wrapper{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    .wrapper{
+        width: 53.125rem;
+    }
+
+    header .wrapper{
+        width: 100%;
+    }
 }

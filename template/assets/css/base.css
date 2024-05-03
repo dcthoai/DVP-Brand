@@ -97,30 +97,30 @@ body{
 }
 
 .rectangle-25{
-    width: 25.625rem;
-    max-width: calc(25% - 1.875rem);
+    width: 27.5rem;
+    max-width: 25%;
 }
 
 .rectangle-50{
-    width: 53.125rem;
-    max-width: calc(50% - 1.875rem);
+    width: 55rem;
+    max-width: 50%;
 }
 
 .rectangle-75{
-    width: 80.625rem;
-    max-width: calc(75% - 1.875rem);
+    width: 82.5rem;
+    max-width: 75%;
 }
 
 .rectangle-100{
-    width: 108.125rem;
-    max-width: calc(100% - 1.875rem);
+    width: 110rem;
+    max-width: 100%;
 }
 
 .rectangle-25,
 .rectangle-50,
 .rectangle-75,
 .rectangle-100{
-    margin: 0.9375rem;
+    padding: 0.9375rem;
 }
 
 .top{
@@ -181,8 +181,8 @@ body{
 @media (min-width: 768px) and (max-width: 1199px){
     .wrapper{
         width: 53.125rem;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     header .wrapper{
@@ -190,23 +190,23 @@ body{
     }
 
     .rectangle-tab-25{
-        width: 25.625rem !important;
-        max-width: calc(25% - 1.875rem) !important;
+        width: 27.5rem;
+        max-width: 25%;
     }
     
     .rectangle-tab-50{
-        width: 53.125rem !important;
-        max-width: calc(50% - 1.875rem) !important;
+        width: 55rem;
+        max-width: 50%;
     }
     
     .rectangle-tab-75{
-        width: 80.625rem !important;
-        max-width: calc(75% - 1.875rem) !important;
+        width: 82.5rem;
+        max-width: 75%;
     }
     
     .rectangle-tab-100{
-        width: 108.125rem !important;
-        max-width: calc(100% - 1.875rem) !important;
+        width: 110rem;
+        max-width: 100%;
     }
 }
 
@@ -223,22 +223,22 @@ body{
     }
 
     .rectangle-mob-25{
-        width: 25.625rem !important;
-        max-width: calc(25% - 1.875rem) !important;
+        width: 27.5rem;
+        max-width: 25%;
     }
     
     .rectangle-mob-50{
-        width: 53.125rem !important;
-        max-width: calc(50% - 1.875rem) !important;
+        width: 55rem;
+        max-width: 50%;
     }
     
     .rectangle-mob-75{
-        width: 80.625rem !important;
-        max-width: calc(75% - 1.875rem) !important;
+        width: 82.5rem;
+        max-width: 75%;
     }
     
     .rectangle-mob-100{
-        width: 108.125rem !important;
-        max-width: calc(100% - 1.875rem) !important;
+        width: 110rem;
+        max-width: 100%;
     }
 }

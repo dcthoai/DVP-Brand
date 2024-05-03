@@ -1,10 +1,5 @@
 
 /* Banner */
-.banner .banner__text .banner__text-top,
-.banner .banner__text .banner__text-bot{
-    height: 5.25rem;
-}
-
 .banner .banner__text .banner__text-top{
     padding-right: 6.25rem;
 }
@@ -33,17 +28,17 @@
 
 /* Story */
 .story .story__content{
-    width: 100%;
-    max-width: 80.625rem;
-    height: 27.625rem;
+    width: 80.625rem;
+    max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: end;
 }
 
 .story .story__content .label{
-    width: 25%;
-    max-width: 25.625rem;
+    width: 25.625rem;
+    max-width: 25%;
     padding-top: 1.25rem;
     padding-right: 5rem;
     padding-bottom: 6.25rem;
@@ -88,6 +83,10 @@
     margin-bottom: 0;
 }
 
+.story .story__content .content__link {
+    margin-top: 4rem;
+}
+
 /* Expertise */
 .expertise .expertise__content{
     width: 100%;
@@ -99,6 +98,7 @@
 
 .expertise .service .accordion-body{
     width: 53.125rem;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0;
     padding-bottom: 2rem;
@@ -108,6 +108,11 @@
 
 .expertise .service .carousel{
     width: 25.625rem;
+    max-width: 50%;
+}
+
+.expertise .service .carousel img {
+    width: 100%;
 }
 
 .expertise .service .service__content{
@@ -184,4 +189,57 @@
 
 .work .work__link{
     margin-top: 4rem;
+}
+
+/* Partners */
+.partners .scroll-wrapper .scroll-wrapper__content-item {
+    margin-left: 0;
+}
+
+.partners .scroll-wrapper .scroll-wrapper__content-item img:first-child{
+    margin-right: 1.875rem;
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .wrapper{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Story */
+    .story .story__content .label{
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 3.125rem;
+    }
+
+    /* Partners */
+    .partners .wrapper{
+        width: 45rem;
+        padding: 3.4375rem 0;
+    }
+
+    .partners .scroll-wrapper .scroll-wrapper__content-item img:first-child{
+        margin-bottom: 1.875rem;
+        margin-right: 0;
+    }
+
+    .partners .scroll-wrapper .scroll-wrapper__content-item {
+        flex-direction: column;
+        margin-left: 1.875rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 898px){
+    .banner .banner__text .banner__text-bot,
+    .banner .banner__text .banner__text-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .banner .banner__text .banner__text-top .text-stroke,
+    .banner .banner__text .banner__text-bot .text-uppercase{
+        margin-right: 0;
+    }
 }

@@ -171,19 +171,74 @@ body{
     aspect-ratio: 173/100;
 }
 
-@media (max-width: 1777px){
+@media (min-width: 1200px) and (max-width: 1777px){
     .wrapper{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px){
     .wrapper{
         width: 53.125rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     header .wrapper{
         width: 100%;
+    }
+
+    .rectangle-tab-25{
+        width: 25.625rem !important;
+        max-width: calc(25% - 1.875rem) !important;
+    }
+    
+    .rectangle-tab-50{
+        width: 53.125rem !important;
+        max-width: calc(50% - 1.875rem) !important;
+    }
+    
+    .rectangle-tab-75{
+        width: 80.625rem !important;
+        max-width: calc(75% - 1.875rem) !important;
+    }
+    
+    .rectangle-tab-100{
+        width: 108.125rem !important;
+        max-width: calc(100% - 1.875rem) !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 898px){
+    .wrapper{
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    header .wrapper{
+        width: 100%;
+    }
+
+    .rectangle-mob-25{
+        width: 25.625rem !important;
+        max-width: calc(25% - 1.875rem) !important;
+    }
+    
+    .rectangle-mob-50{
+        width: 53.125rem !important;
+        max-width: calc(50% - 1.875rem) !important;
+    }
+    
+    .rectangle-mob-75{
+        width: 80.625rem !important;
+        max-width: calc(75% - 1.875rem) !important;
+    }
+    
+    .rectangle-mob-100{
+        width: 108.125rem !important;
+        max-width: calc(100% - 1.875rem) !important;
     }
 }

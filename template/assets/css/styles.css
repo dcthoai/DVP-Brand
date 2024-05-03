@@ -76,21 +76,6 @@ header .header__nav .header__nav-link a:hover::after{
     color: var(--bg-light);
 }
 
-.footer .info{
-    margin: 0 0.9375rem;
-    width: 25%;
-    max-width: 25.625rem;
-    flex: 0 0 auto;
-}
-
-.footer .info:first-child{
-    margin-left: 0;
-}
-
-.footer .info:last-child{
-    margin-right: 0;
-}
-
 .footer .info__header .info__header-logo{
     font-family: 'Gilroy-Bold';
     font-size: 4rem;

@@ -1,31 +1,30 @@
-
 /* Header */
 header {
     background-color: var(--main-yellow-color-70);
 }
 
 /* Project */
-.project.wrapper{
+.project.wrapper {
     margin-top: 15rem;
 }
 
-.project .img-1{
+.project .img-1 {
     aspect-ratio: 173/100;
 }
 
-.project .img-2{
+.project .img-2 {
     aspect-ratio: 1/1;
 }
 
-.project .img-3{
+.project .img-3 {
     height: 100%;
 }
 
-.project .wrapper__header{
+.project .wrapper__header {
     margin-bottom: 5rem;
 }
 
-.project .project__sub-heading{
+.project .project__sub-heading {
     margin-top: 1.5rem;
     font-family: 'Gilroy-SemiBold';
     font-size: var(--fs-bold);
@@ -35,7 +34,7 @@ header {
     align-items: center;
 }
 
-.project .project__sub-heading .line{
+.project .project__sub-heading .line {
     display: inline-block;
     width: 12.5rem;
     height: 0.0625rem;
@@ -44,12 +43,12 @@ header {
     margin-top: 0.375rem;
 }
 
-.project .project__des{
+.project .project__des {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
-.project .project__des .project__des-title{
+.project .project__des .project__des-title {
     margin-bottom: 1.5rem;
     font-family: 'Gilroy-SemiBold';
     font-size: var(--fs-bold);
@@ -57,7 +56,7 @@ header {
     color: var(--main-black-color-100);
 }
 
-.project .project__des .project__des-text{
+.project .project__des .project__des-text {
     font-family: 'Gilroy-Regular';
     font-size: var(--fs-medium);
     line-height: 1.875rem;
@@ -69,7 +68,7 @@ header {
     margin: 8.75rem auto;
 }
 
-.project-info .project-info__heading{
+.project-info .project-info__heading {
     padding: 0.5rem;
     font-family: 'Gilroy-Bold';
     font-size: var(--fs-xbold);
@@ -80,16 +79,16 @@ header {
 .project-info .project__info-customer,
 .project-info .project__info-category,
 .project-info .project__info-date,
-.project-info .project__info-more{
+.project-info .project__info-more {
     padding: 0.5rem;
 }
 
 .project-info .project__info-customer,
-.project-info .project__info-date{
+.project-info .project__info-date {
     margin-bottom: 1.5rem;
 }
 
-.project-info .title{
+.project-info .title {
     font-family: 'Gilroy-Regular';
     font-size: var(--fs-small);
     line-height: 1.5rem;
@@ -97,7 +96,7 @@ header {
     margin-bottom: 0.5rem;
 }
 
-.project-info .name{
+.project-info .name {
     font-family: 'Gilroy-SemiBold';
     font-size: var(--fs-bold);
     line-height: 2.25rem;
@@ -105,11 +104,11 @@ header {
 }
 
 .project-info .project-link,
-.project-info .project-link i{
+.project-info .project-link i {
     transition: all ease-in-out 0.3s;
 }
 
-.project-info .project-link i.fa-arrow-right-long{
+.project-info .project-link i.fa-arrow-right-long {
     color: var(--main-black-color-100);
     opacity: 0;
     font-size: var(--fs-normal);
@@ -117,21 +116,21 @@ header {
     margin-left: 0.5rem;
 }
 
-.project-info .project-link:hover{
+.project-info .project-link:hover {
     color: var(--main-yellow-color-100);
 }
 
-.project-info .project-link:hover i.fa-arrow-right-long{
+.project-info .project-link:hover i.fa-arrow-right-long {
     opacity: 1;
     color: var(--main-yellow-color-100);
 }
 
 /* Suggestion project */
-.suggestion{
+.suggestion {
     margin-bottom: 8.75rem;
 }
 
-.suggestion .suggestion__header{
+.suggestion .suggestion__header {
     margin-bottom: 1.5rem;
     padding: 0.5rem;
     padding-right: 0;
@@ -140,14 +139,14 @@ header {
     align-items: center;
 }
 
-.suggestion .suggestion__header .suggestion__header-heading{
+.suggestion .suggestion__header .suggestion__header-heading {
     font-family: 'Gilroy-Bold';
     font-size: var(--fs-xbold);
     line-height: 3.5625rem;
     color: var(--main-black-color-100);
 }
 
-.suggestion .suggestion__header .suggestion__header-control button{
+.suggestion .suggestion__header .suggestion__header-control button {
     padding: 0.625rem 1rem;
     line-height: 0;
     border: none;
@@ -155,30 +154,31 @@ header {
     cursor: pointer;
 }
 
-.suggestion .suggestion__header .suggestion__header-control button svg{
+.suggestion .suggestion__header .suggestion__header-control button svg {
     height: 0.8125rem;
     cursor: pointer;
 }
 
 .suggestion .suggestion__header .suggestion__header-control button path,
-.suggestion .suggestion__header .suggestion__header-control button rect{
+.suggestion .suggestion__header .suggestion__header-control button rect {
     fill: var(--main-black-color-100);
     transition: all ease-in-out 0.3s;
     cursor: pointer;
 }
 
 .suggestion .suggestion__header .suggestion__header-control button:hover path,
-.suggestion .suggestion__header .suggestion__header-control button:hover rect{
-    fill: var(--main-yellow-color-100);    
+.suggestion .suggestion__header .suggestion__header-control button:hover rect {
+    fill: var(--main-yellow-color-100);
 }
 
 /* Project suggest */
-.suggestion .suggestion__content .project .project__img{
+.suggestion .suggestion__content .project .project__img {
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
 }
-.suggestion .suggestion__content .project .project__img img{
+
+.suggestion .suggestion__content .project .project__img img {
     width: 100%;
     height: 100%;
     vertical-align: middle;
@@ -186,11 +186,11 @@ header {
     cursor: pointer;
 }
 
-.suggestion .suggestion__content .project:hover img{
+.suggestion .suggestion__content .project:hover img {
     transform: scale(1.05);
 }
 
-.suggestion .suggestion__content .project .project__des{
+.suggestion .suggestion__content .project .project__des {
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 0;
@@ -199,7 +199,7 @@ header {
     justify-content: space-between;
 }
 
-.suggestion .suggestion__content .project .project__des-text{
+.suggestion .suggestion__content .project .project__des-text {
     flex: 1;
     font-family: 'Gilroy-SemiBold';
     font-size: var(--fs-bold);
@@ -213,7 +213,7 @@ header {
     -webkit-box-orient: vertical;
 }
 
-.suggestion .suggestion__content .project:hover .project__des-icon{
+.suggestion .suggestion__content .project:hover .project__des-icon {
     opacity: 1;
 }
 
@@ -225,15 +225,15 @@ header {
     transition: all ease-in-out 0.35s;
 }
 
-.suggestion .suggestion__content .project .arrow-right-translate{
+.suggestion .suggestion__content .project .arrow-right-translate {
     height: 100%;
 }
 
-.suggestion .suggestion__content .project .arrow-right-translate .arrow-right-translate__line{
+.suggestion .suggestion__content .project .arrow-right-translate .arrow-right-translate__line {
     background-color: var(--main-black-color-100);
 }
 
-.suggestion .suggestion__content .project .arrow-right-translate .arrow-right-translate__right{
+.suggestion .suggestion__content .project .arrow-right-translate .arrow-right-translate__right {
     color: var(--main-black-color-100);
 }
 

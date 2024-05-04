@@ -268,9 +268,13 @@ header .header__nav .header__nav-link a:hover::after{
     padding: 6.25rem 3.75rem;
 }
 
+.contact .quote__heading-tab {
+    display: none;
+}
+
 .contact .quote{
     width: 32.5rem;
-    max-width: calc(50% - 1rem);
+    max-width: calc(50% - 0.9375rem);
 }
 
 .contact .quote__heading{
@@ -308,7 +312,7 @@ header .header__nav .header__nav-link a:hover::after{
 
 .contact .contact__form{
     width: 29.25rem;
-    max-width: calc(50% - 1rem);
+    max-width: calc(50% - 0.9375rem);
     padding: 5rem 4rem 2.5rem;
     background-color: #fff;
     box-shadow: 0 0 1.875rem 0.125rem var(--sub-heading-color-20);
@@ -508,4 +512,30 @@ header .header__nav .header__nav-link a:hover::after{
     height: 100%;
     vertical-align: middle;
     cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .contact.wrapper{
+        width: 53.125rem;
+        padding: 6.25rem 0;
+        overflow: visible;
+    }
+
+    .contact .quote__heading{
+        display: none;
+    }
+
+    .contact .quote__heading-tab {
+        display: block;
+        margin-bottom: 4.375rem;
+        font-family: 'Gilroy-Bold';
+        font-size: 2.375rem;
+        line-height: 3.5625rem;
+        color: var(--main-black-color-100);
+        text-align: center;
+    }
+
+    .contact .contact__form {
+        padding: 5rem 2.1875rem 2.5rem;
+    }
 }

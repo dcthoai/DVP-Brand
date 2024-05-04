@@ -17,6 +17,10 @@ header {
     aspect-ratio: 1/1;
 }
 
+.project .img-3{
+    height: calc(200% + 1.875rem);
+}
+
 .project .wrapper__header{
     margin-bottom: 5rem;
 }
@@ -41,7 +45,8 @@ header {
 }
 
 .project .project__des{
-    margin: 5rem 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .project .project__des .project__des-title{
@@ -64,10 +69,6 @@ header {
     margin: 8.75rem auto;
 }
 
-.project-info .wrap{
-    width: 30%;
-}
-
 .project-info .project-info__heading{
     padding: 0.5rem;
     font-family: 'Gilroy-Bold';
@@ -88,7 +89,7 @@ header {
     margin-bottom: 1.5rem;
 }
 
-.project-info .wrap .title{
+.project-info .title{
     font-family: 'Gilroy-Regular';
     font-size: 1rem;
     line-height: 1.5rem;
@@ -96,7 +97,7 @@ header {
     margin-bottom: 0.5rem;
 }
 
-.project-info .wrap .name{
+.project-info .name{
     font-family: 'Gilroy-SemiBold';
     font-size: 1.5rem;
     line-height: 2.25rem;
@@ -163,6 +164,7 @@ header {
 .suggestion .suggestion__header .suggestion__header-control button rect{
     fill: var(--main-black-color-100);
     transition: all ease-in-out 0.3s;
+    cursor: pointer;
 }
 
 .suggestion .suggestion__header .suggestion__header-control button:hover path,
@@ -234,3 +236,9 @@ header {
 .suggestion .suggestion__content .project .arrow-right-translate .arrow-right-translate__right{
     color: var(--main-black-color-100);
 }
+
+/* @media (min-width: 768px) and (max-width: 1199px) {
+    .project-info .project-info__heading {
+        text-align: center;
+    }
+} */

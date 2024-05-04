@@ -199,6 +199,10 @@ body{
         width: 100%;
     }
 
+    .order-tab-1{
+        order: -1;
+    }
+
     .rectangle-tab-0 {
         display: none !important;
     }

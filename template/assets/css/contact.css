@@ -213,9 +213,3 @@ header {
     -moz-text-stroke-color: var(--main-black-color-100);
     -ms-text-stroke-color: var(--main-black-color-100);
 }
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    .inspiration .inspiration__img-2 {
-        display: none;
-    }
-}

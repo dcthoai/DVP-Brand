@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -29,6 +28,16 @@
     --sub-heading-color: #595959;
     --sub-heading-color-20: rgb(89, 89, 89, 0.2);
     --sub-heading-color-30: rgb(89, 89, 89, 0.3);
+
+    --fs-xsmall: 0.875rem;
+    --fs-small: 1rem;
+    --fs-normal: 1.125rem;
+    --fs-medium: 1.25rem;
+    --fs-bold: 1.5rem;
+    --fs-semi-bold: 2rem;
+    --fs-xbold: 2.375rem;
+    --fs-large: 4rem;
+    --fs-xlarge: 5rem;
 }
 
 html {
@@ -48,197 +57,256 @@ ul {
     list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 0;
 }
 
-body{
+body {
     background-color: var(--main-bg-color-100);
 }
 
-.wrapper{
-    width: 108.125rem;
-    max-width: 100%;
+.wrapper {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.wrapper-flex{
+.wrapper-flex {
     display: flex;
     flex-wrap: wrap;
     margin: -0.9375rem;
 }
 
-.wrapper.wrapper-top{
+.wrapper.wrapper-top {
     margin-top: 8.75rem;
 }
 
-.wrapper.wrapper-bottom{
+.wrapper.wrapper-bottom {
     margin-bottom: 8.75rem;
 }
 
-.wrapper .wrapper__header{
+.wrapper .wrapper__header {
     margin-bottom: 4rem;
 }
 
-.wrapper .wrapper__header .wrapper__header-heading{
+.wrapper .wrapper__header .wrapper__header-heading {
     font-family: 'Gilroy-Bold';
-    font-size: 4rem;
+    font-size: var(--fs-large);
     line-height: 5.5rem;
     color: var(--main-black-color-100);
 }
 
-.wrapper .wrapper__header .wrapper__header-sub--heading{
+.wrapper .wrapper__header .wrapper__header-sub--heading {
     height: 2.25rem;
     font-family: 'Gilroy-Medium';
-    font-size: 1.5rem;
+    font-size: var(--fs-bold);
     line-height: 2.25rem;
     color: var(--sub-heading-color);
 }
 
-.rectangle-25{
-    width: 25.625rem;
-    max-width: calc(25% - 1.875rem);
+.rectangle-0 {
+    width: 0;
 }
 
-.rectangle-50{
-    width: 53.125rem;
-    max-width: calc(50% - 1.875rem);
+.rectangle-25 {
+    width: 27.5rem;
+    max-width: 25%;
 }
 
-.rectangle-75{
-    width: 80.625rem;
-    max-width: calc(75% - 1.875rem);
+.rectangle-33 {
+    width: 36.666667rem;
+    max-width: 33.333333%;
 }
 
-.rectangle-100{
-    width: 108.125rem;
-    max-width: calc(100% - 1.875rem);
+.rectangle-50 {
+    width: 55rem;
+    max-width: 50%;
 }
 
+.rectangle-75 {
+    width: 82.5rem;
+    max-width: 75%;
+}
+
+.rectangle-100 {
+    width: 110rem;
+    max-width: 100%;
+}
+
+.rectangle-0,
 .rectangle-25,
+.rectangle-33,
 .rectangle-50,
 .rectangle-75,
-.rectangle-100{
-    margin: 0.9375rem;
+.rectangle-100 {
+    padding: 0.9375rem;
 }
 
-.top{
+.top {
     margin-top: 0.9375rem;
 }
 
-.top-1{
+.top-1 {
     margin-top: 1.875rem;
 }
 
-.bottom{
+.bottom {
     margin-bottom: 0.9375rem;
 }
 
-.bottom-1{
+.bottom-1 {
     margin-bottom: 1.875rem;
 }
 
-.left{
+.left {
     margin-left: 0.9375rem;
 }
 
-.left-1{
+.left-1 {
     margin-left: 1.875rem;
 }
 
-.right{
+.right {
     margin-right: 0.9375rem;
 }
 
-.right-1{
+.right-1 {
     margin-right: 1.875rem;
 }
 
-.project-25{
-    aspect-ratio: 1/1;
-}
-
-.project-50{
-    aspect-ratio: 1/1;
-}
-
-.project-75{
-    aspect-ratio: 129/85;
-}
-
-.project-100{
-    aspect-ratio: 173/100;
-}
-
-@media (min-width: 1200px) and (max-width: 1777px){
-    .wrapper{
+/* Tablet */
+@media (min-width: 768px) {
+    .wrapper {
+        width: 53.125rem;
+        max-width: 100%;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
+
+    header .wrapper {
+        width: 100%;
+    }
+
+    .rectangle-tab-0 {
+        width: 0;
+    }
+
+    .rectangle-tab-25 {
+        width: 27.5rem;
+        max-width: 25%;
+    }
+
+    .rectangle-tab-33 {
+        width: 36.666667rem;
+        max-width: 33.333333%;
+    }
+
+    .rectangle-tab-50 {
+        width: 55rem;
+        max-width: 50%;
+    }
+
+    .rectangle-tab-75 {
+        width: 82.5rem;
+        max-width: 75%;
+    }
+
+    .rectangle-tab-100 {
+        width: 110rem;
+        max-width: 100%;
+    }
+
+    .rectangle-tab-0,
+    .rectangle-tab-25,
+    .rectangle-tab-33,
+    .rectangle-tab-50,
+    .rectangle-tab-75,
+    .rectangle-tab-100 {
+        padding: 0.9375rem;
+    }
+
+    .order-tab-0 {
+        order: 0;
+    }
+
+    .order-tab-1 {
+        order: -1;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1199px){
-    .wrapper{
-        width: 53.125rem;
+@media (min-width: 900px) {
+    .wrapper {
         padding-left: 0;
         padding-right: 0;
     }
+}
 
-    header .wrapper{
-        width: 100%;
+/* PC */
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 108.125rem;
+        max-width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
-    .rectangle-tab-25{
-        width: 25.625rem !important;
-        max-width: calc(25% - 1.875rem) !important;
+    .rectangle-pc-0 {
+        width: 0;
     }
-    
-    .rectangle-tab-50{
-        width: 53.125rem !important;
-        max-width: calc(50% - 1.875rem) !important;
+
+    .rectangle-pc-25 {
+        width: 27.5rem;
+        max-width: 25%;
     }
-    
-    .rectangle-tab-75{
-        width: 80.625rem !important;
-        max-width: calc(75% - 1.875rem) !important;
+
+    .rectangle-pc-33 {
+        width: 36.666667rem;
+        max-width: 33.333333%;
     }
-    
-    .rectangle-tab-100{
-        width: 108.125rem !important;
-        max-width: calc(100% - 1.875rem) !important;
+
+    .rectangle-pc-50 {
+        width: 55rem;
+        max-width: 50%;
+    }
+
+    .rectangle-pc-75 {
+        width: 82.5rem;
+        max-width: 75%;
+    }
+
+    .rectangle-pc-100 {
+        width: 110rem;
+        max-width: 100%;
+    }
+
+    .rectangle-pc-0,
+    .rectangle-pc-25,
+    .rectangle-pc-33,
+    .rectangle-pc-50,
+    .rectangle-pc-75,
+    .rectangle-pc-100 {
+        padding: 0.9375rem;
+    }
+
+    .order-pc-0 {
+        order: 0;
+    }
+
+    .order-pc-1 {
+        order: -1;
     }
 }
 
-@media (min-width: 768px) and (max-width: 898px){
-    .wrapper{
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
-    }
-}
-
-@media (max-width: 767px) {
-    header .wrapper{
-        width: 100%;
-    }
-
-    .rectangle-mob-25{
-        width: 25.625rem !important;
-        max-width: calc(25% - 1.875rem) !important;
-    }
-    
-    .rectangle-mob-50{
-        width: 53.125rem !important;
-        max-width: calc(50% - 1.875rem) !important;
-    }
-    
-    .rectangle-mob-75{
-        width: 80.625rem !important;
-        max-width: calc(75% - 1.875rem) !important;
-    }
-    
-    .rectangle-mob-100{
-        width: 108.125rem !important;
-        max-width: calc(100% - 1.875rem) !important;
+@media (min-width: 1778px) {
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

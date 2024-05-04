@@ -39,23 +39,6 @@
     margin-bottom: 4rem;
 }
 
-.expertise .service {
-    border-bottom: 0.125rem solid var(--main-black-color-100);
-}
-
-.expertise .service .accordion-body {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.expertise .service .service__content {
-    width: 50%;
-    padding: 0.5rem 0;
-}
-
 .expertise .service .service__content:first-child {
     padding: 0.5rem 2rem 0.5rem 4rem;
 }

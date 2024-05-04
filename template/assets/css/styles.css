@@ -9,8 +9,7 @@ header {
 }
 
 header .wrapper {
-    height: 6.25rem;
-    padding: 1.25rem 0;
+    height: 1.875rem;
 }
 
 header .header__logo {
@@ -512,7 +511,14 @@ header .header__nav .header__nav-link a:hover::after {
     cursor: pointer;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 576px) {
+    header .wrapper {
+        height: 6.25rem;
+        padding: 1.25rem 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1199px) {
     .contact.wrapper {
         width: 53.125rem;
         padding: 6.25rem 0;
@@ -538,7 +544,7 @@ header .header__nav .header__nav-link a:hover::after {
     }
 }
 
-@media (min-width: 768px) and (max-width: 899px) {
+@media (min-width: 576px) and (max-width: 899px) {
     .contact.wrapper {
         padding-left: 1.5rem;
         padding-right: 1.5rem;

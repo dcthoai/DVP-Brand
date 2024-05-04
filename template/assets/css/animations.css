@@ -252,19 +252,21 @@
 
 
 /* Animation Accordion collapse 
-    <div class="accordion" id="accordion">
-        <div class="accordion-item border-0">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse">
+    <div class="accordion" id="accordion-service">
+        <div class="accordion-item service">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-service-1">
                 <div class="d-flex align-items-center justify-content-between w-100 h-100">
-                    <div class="accordion-item__icon-left">
+                    <div class="accordion-button__left">
                         <div class="circle-rotate-icon">
                             <div class="circle-icon"></div>
                         </div>
                     </div>
 
-                    <div class="accordion-item__content"><h4>Branding</h4></div>
+                    <div class="accordion-button__title">
+                        <h4>Branding</h4>
+                    </div>
 
-                    <div class="accordion-item__icon-right">
+                    <div class="accordion-button__right">
                         <div class="plus-rotate-icon">
                             <i class="left"></i>
                             <i class="right"></i>
@@ -273,9 +275,9 @@
                 </div>
             </button>
 
-            <div class="accordion-collapse collapse" id="collapse"  data-bs-parent="#accordion">
+            <div class="accordion-collapse collapse" id="collapse-service-1" data-bs-parent="#accordion-service">
                 <div class="accordion-body">
-                    Collapse content here.
+                    Collapse here
                 </div>
             </div>
         </div>
@@ -300,19 +302,19 @@
     display: none;
 }
 
-.accordion .accordion-item .accordion-button .accordion-item__icon-left {
+.accordion .accordion-item .accordion-button .accordion-button__left {
     padding-left: 1rem;
     padding-right: 2.5rem;
     cursor: pointer;
 }
 
-.accordion .accordion-item .accordion-button .accordion-item__content {
+.accordion .accordion-item .accordion-button .accordion-button__title {
     flex: 1;
     padding: 0 0.625rem;
     cursor: pointer;
 }
 
-.accordion .accordion-item .accordion-button .accordion-item__content h4 {
+.accordion .accordion-item .accordion-button .accordion-button__title h4 {
     font-family: 'Gilroy-Medium';
     font-size: var(--fs-medium);
     line-height: 1.875rem;
@@ -322,11 +324,11 @@
     width: fit-content;
 }
 
-.accordion .accordion-item .accordion-button .accordion-item__content h4:hover {
+.accordion .accordion-item .accordion-button .accordion-button__title h4:hover {
     color: var(--main-yellow-color-100);
 }
 
-.accordion .accordion-item .accordion-button .accordion-item__icon-right {
+.accordion .accordion-item .accordion-button .accordion-button__right {
     padding-right: 4rem;
     height: 1.0625rem;
     cursor: pointer;

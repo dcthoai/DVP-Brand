@@ -30,6 +30,7 @@
     --sub-heading-color-30: rgb(89, 89, 89, 0.3);
 
     --fs-xsmall: 0.875rem;
+    --fs-semi-small: 0.9375rem;
     --fs-small: 1rem;
     --fs-normal: 1.125rem;
     --fs-medium: 1.25rem;
@@ -71,9 +72,10 @@ body {
 }
 
 .wrapper {
-    width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    width: 24.375rem;
+    max-width: 100%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -182,7 +184,7 @@ body {
 }
 
 /* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     .wrapper {
         width: 53.125rem;
         max-width: 100%;

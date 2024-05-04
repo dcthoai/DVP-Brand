@@ -64,10 +64,6 @@ header {
 }
 
 /* Project info */
-.project-info {
-    margin: 8.75rem auto;
-}
-
 .project-info .project-info__heading {
     padding: 0.5rem;
     font-family: 'Gilroy-Bold';

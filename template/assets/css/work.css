@@ -25,7 +25,7 @@ header {
     border-top-right-radius: 0.5rem;
     border: none;
     font-family: 'Gilroy-SemiBold';
-    font-size: 1.25rem;
+    font-size: var(--fs-medium);
     line-height: 1.25rem;
     color: var(--main-black-color-100);
     background-color: transparent;
@@ -60,7 +60,7 @@ header {
 
 .work .work__des .work__des-text{
     font-family: 'Gilroy-Regular';
-    font-size: 1.25rem;
+    font-size: var(--fs-medium);
     line-height: 1.875rem;
     color: var(--main-black-color-100);
 }
@@ -99,7 +99,7 @@ header {
     flex: 1;
     color: var(--bg-light);
     font-family: 'Gilroy-SemiBold';
-    font-size: 1.5rem;
+    font-size: var(--fs-bold);
     line-height: 2.25rem;
     transition: all ease-in-out 0.35s;
     cursor: pointer;
@@ -150,7 +150,7 @@ header {
     border-radius: 0.875rem;
     background-color: transparent;
     font-family: 'Gilroy-Regular';
-    font-size: 1rem;
+    font-size: var(--fs-small);
     line-height: 1;
     color: var(--main-black-color-100);
     border: 0.0625rem solid var(--main-black-color-100);

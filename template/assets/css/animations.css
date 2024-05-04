@@ -174,7 +174,7 @@
 .arrow-right-link .arrow-right-link__text {
     padding: 0.625rem;
     font-family: 'Gilroy-Regular';
-    font-size: 1.25rem;
+    font-size: var(--fs-medium);
     line-height: 1.5rem;
     color: var(--main-black-color-100);
     transition: all ease-in-out 0.25s;
@@ -313,7 +313,7 @@
 
 .accordion .accordion-item .accordion-button .accordion-item__content h4{
     font-family: 'Gilroy-Medium';
-    font-size: 1.25rem;
+    font-size: var(--fs-medium);
     line-height: 1.875rem;
     color: var(--main-black-color-100);
     transition: all ease-in-out 0.25s;

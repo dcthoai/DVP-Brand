@@ -18,7 +18,7 @@ header {
 }
 
 .project .img-3{
-    height: calc(200% + 1.875rem);
+    height: 100%;
 }
 
 .project .wrapper__header{
@@ -28,7 +28,7 @@ header {
 .project .project__sub-heading{
     margin-top: 1.5rem;
     font-family: 'Gilroy-SemiBold';
-    font-size: 1.5rem;
+    font-size: var(--fs-bold);
     line-height: 2.25rem;
     color: var(--main-black-color-100);
     display: flex;
@@ -52,14 +52,14 @@ header {
 .project .project__des .project__des-title{
     margin-bottom: 1.5rem;
     font-family: 'Gilroy-SemiBold';
-    font-size: 1.5rem;
+    font-size: var(--fs-bold);
     line-height: 2.25rem;
     color: var(--main-black-color-100);
 }
 
 .project .project__des .project__des-text{
     font-family: 'Gilroy-Regular';
-    font-size: 1.25rem;
+    font-size: var(--fs-medium);
     line-height: 1.875rem;
     color: var(--sub-heading-color);
 }
@@ -72,7 +72,7 @@ header {
 .project-info .project-info__heading{
     padding: 0.5rem;
     font-family: 'Gilroy-Bold';
-    font-size: 2.375rem;
+    font-size: var(--fs-xbold);
     line-height: 3.5625rem;
     color: var(--main-black-color-100);
 }
@@ -91,7 +91,7 @@ header {
 
 .project-info .title{
     font-family: 'Gilroy-Regular';
-    font-size: 1rem;
+    font-size: var(--fs-small);
     line-height: 1.5rem;
     color: var(--main-black-color-100);
     margin-bottom: 0.5rem;
@@ -99,7 +99,7 @@ header {
 
 .project-info .name{
     font-family: 'Gilroy-SemiBold';
-    font-size: 1.5rem;
+    font-size: var(--fs-bold);
     line-height: 2.25rem;
     color: var(--main-black-color-100);
 }
@@ -112,7 +112,7 @@ header {
 .project-info .project-link i.fa-arrow-right-long{
     color: var(--main-black-color-100);
     opacity: 0;
-    font-size: 1.125rem;
+    font-size: var(--fs-normal);
     line-height: 1.25rem;
     margin-left: 0.5rem;
 }
@@ -142,7 +142,7 @@ header {
 
 .suggestion .suggestion__header .suggestion__header-heading{
     font-family: 'Gilroy-Bold';
-    font-size: 2.375rem;
+    font-size: var(--fs-xbold);
     line-height: 3.5625rem;
     color: var(--main-black-color-100);
 }
@@ -202,7 +202,7 @@ header {
 .suggestion .suggestion__content .project .project__des-text{
     flex: 1;
     font-family: 'Gilroy-SemiBold';
-    font-size: 1.5rem;
+    font-size: var(--fs-bold);
     line-height: 2.25rem;
     color: var(--main-black-color-100);
     cursor: pointer;

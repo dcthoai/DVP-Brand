@@ -16,7 +16,7 @@ header {
 .inspiration .inspiration__sub-heading{
     margin-top: 1.5rem;
     font-family: 'Gilroy-SemiBold';
-    font-size: 1.5rem;
+    font-size: var(--fs-bold);
     line-height: 2.25rem;
     color: var(--main-black-color-100);
     display: flex;
@@ -58,14 +58,14 @@ header {
     margin-bottom: 2rem;
     padding: 0.5rem;
     font-family: 'Gilroy-Bold';
-    font-size: 2.375rem;
+    font-size: var(--fs-xbold);
     line-height: 3.5625rem;
     color: var(--main-black-color-100);
 }
 
 .inspiration .inspiration__info .sub-heading{
     font-family: 'Gilroy-SemiBold';
-    font-size: 1.25rem;
+    font-size: var(--fs-medium);
     line-height: 1.875rem;
     color: var(--main-black-color-100);
     margin-bottom: 4rem;
@@ -74,7 +74,7 @@ header {
 .inspiration .inspiration__info p{
     margin-bottom: 1rem;
     font-family: 'Gilroy-Regular';
-    font-size: 1.25rem;
+    font-size: var(--fs-medium);
     line-height: 1;
     color: var(--sub-heading-color);
 }
@@ -87,7 +87,7 @@ header {
 
 .location .location__header-heading{
     font-family: 'Gilroy-Bold';
-    font-size: 2.375rem;
+    font-size: var(--fs-xbold);
     line-height: 3.5rem;
     margin-bottom: 0;
     color: var(--main-black-color);
@@ -163,7 +163,7 @@ header {
 
 .location .location__address-text h5{
     font-family: 'Gilroy-Medium';
-    font-size: 1.125rem;
+    font-size: var(--fs-normal);
     letter-spacing: 0.0625rem;
     margin: 0.5rem 0;
     color: var(--main-black-color-100);
@@ -194,7 +194,7 @@ header {
 
 .location .location__carousel .heading{
     font-family: 'Gilroy-Heavy';
-    font-size: 5rem;
+    font-size: var(--fs-xlarge);
     line-height: 5.25rem;
     color: var(--bg-light);
 }

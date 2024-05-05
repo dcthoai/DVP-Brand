@@ -196,8 +196,8 @@ header .wrapper {
 @media (min-width: 576px) {
     .wrapper {
         width: 36rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
     }
 }
 

@@ -263,18 +263,16 @@ header .header__nav .header__nav-link a:hover::after {
 
 /* Contact form */
 .contact.wrapper {
-    width: 80.625rem;
-    max-width: 100%;
-    padding: 6.25rem 3.75rem;
+    width: 21.875rem;
+    overflow: visible;
 }
 
-.contact .quote__heading-tab {
-    display: none;
-}
-
-.contact .quote {
-    width: 32.5rem;
-    max-width: calc(50% - 0.9375rem);
+.contact .quote__heading-top {
+    margin-bottom: 3rem;
+    font-family: "Gilroy-Bold";
+    font-size: 2.375rem;
+    line-height: 3.5625rem;
+    color: var(--main-black-color-100);
 }
 
 .contact .quote__heading {
@@ -311,12 +309,29 @@ header .header__nav .header__nav-link a:hover::after {
 }
 
 .contact .contact__form {
-    width: 29.25rem;
-    max-width: calc(50% - 0.9375rem);
-    padding: 5rem 4rem 2.5rem;
+    padding: 2rem 1.5rem;
     background-color: #fff;
     box-shadow: 0 0 1.875rem 0.125rem var(--sub-heading-color-20);
     border-radius: 1.5rem;
+}
+
+.contact .contact__form .contact__form-header {
+    margin-bottom: 2rem;
+}
+
+.contact .contact__form .contact__form-header .heading {
+    font-family: 'Gilroy-SemiBold';
+    font-size: var(--fs-normal);
+    line-height: 1.25rem;
+    color: var(--main-black-color-100);
+}
+
+.contact .contact__form .contact__form-header .sub-heading {
+    padding: 0.5rem 2.375rem 0;
+    font-family: 'Gilroy-Regular';
+    font-size: var(--fs-xsmall);
+    line-height: 1rem;
+    color: var(--sub-heading-color);
 }
 
 .contact .contact__form label {
@@ -408,6 +423,7 @@ header .header__nav .header__nav-link a:hover::after {
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     z-index: -1;
+    background-color: var(--main-bg-color-100);
     box-shadow: 0 0 1.25rem 0.125rem var(--sub-heading-color-20);
 }
 
@@ -420,6 +436,7 @@ header .header__nav .header__nav-link a:hover::after {
     overscroll-behavior-y: contain;
 }
 
+/* Custom service scrollbar */
 .contact .contact__form .services::-webkit-scrollbar {
     width: 0.1875rem;
 }
@@ -430,14 +447,9 @@ header .header__nav .header__nav-link a:hover::after {
 }
 
 .contact .contact__form .services::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: var(--sub-heading-color);
     border-radius: 0.25rem;
 }
-
-.contact .contact__form .services:hover::-webkit-scrollbar-thumb {
-    background-color: var(--sub-heading-color);
-}
-
 /* End: Custom service scrollbar */
 
 .contact .contact__form .services .services__item {
@@ -512,7 +524,9 @@ header .header__nav .header__nav-link a:hover::after {
 
 /* Responive */
 @media (min-width: 576px) {
-    
+    .contact.wrapper {
+        width: 27.5rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -541,16 +555,62 @@ header .header__nav .header__nav-link a:hover::after {
     .footer .location {
         display: block;
     }
+
+    .contact.wrapper {
+        width: 53.125rem;
+    }
+
+    .contact .contact__form {
+        margin-top: 0.75rem;
+    }
+
+    .contact.wrapper .wrapper-flex .wrapper-flex-item:first-child {
+        padding-right: 0.9375rem !important;
+    }
+
+    .contact.wrapper .wrapper-flex .wrapper-flex-item:last-child {
+        padding-left: 0.9375rem !important;
+    }
 }
 
 @media (min-width: 900px) {
-    
+    .contact .contact__form {
+        margin-top: 0;
+        padding: 5rem 2.1875rem 2.5rem;
+    }
 }
 
 @media (min-width: 1200px) {
-    
+    .contact.wrapper {
+        width: 75rem;
+        padding-top: 6.5rem;
+        padding-bottom: 6.5rem;
+    }
+
+    .contact .quote {
+        max-width: 32.5rem;
+        margin-right: auto;
+    }
+
+    .contact .contact__form {
+        margin-left: auto;
+        max-width: 29.25rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .contact .contact__form .services::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+    .contact .contact__form .services:hover::-webkit-scrollbar-thumb {
+        background-color: var(--sub-heading-color);
+    }
 }
 
 @media (min-width: 1778px) {
-    
+    .contact.wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

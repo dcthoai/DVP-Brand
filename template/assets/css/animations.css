@@ -235,11 +235,11 @@
 }
 
 .arrow-right-translate-hover:hover .arrow-right-translate .arrow-right-translate__line {
-    width: calc(100% - 3px);
+    width: calc(100% - 3px) !important;
 }
 
 .arrow-right-translate-hover:hover .arrow-right-translate .arrow-right-translate__right {
-    opacity: 1;
+    opacity: 1 !important;
 }
 /* End: Animation change icon arrow right */
 

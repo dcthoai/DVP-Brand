@@ -108,6 +108,7 @@ header .wrapper {
 
 .wrapper .wrapper__header {
     margin-bottom: 2rem;
+    cursor: default;
 }
 
 .wrapper .wrapper__header .wrapper__header-heading {

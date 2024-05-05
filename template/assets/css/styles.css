@@ -81,6 +81,7 @@ header .header__nav .header__nav-link a:hover::after {
     color: var(--bg-light);
     letter-spacing: 2%;
     margin-bottom: 0;
+    cursor: default;
 }
 
 .footer .info .heading {
@@ -89,6 +90,7 @@ header .header__nav .header__nav-link a:hover::after {
     font-family: 'Gilroy-Bold';
     color: var(--bg-light);
     margin-bottom: 0;
+    cursor: default;
 }
 
 .footer .info__content {
@@ -103,6 +105,7 @@ header .header__nav .header__nav-link a:hover::after {
     line-height: 1.5rem;
     color: var(--bg-light);
     margin: 0.25rem 0;
+    cursor: default;
 }
 
 .footer .info__content .text .website-link {
@@ -350,7 +353,6 @@ header .header__nav .header__nav-link a:hover::after {
 
 /* List service */
 .contact .contact__form button.category-service {
-    cursor: pointer;
     width: 100%;
     height: 2rem;
     margin-top: 0.875rem;
@@ -368,7 +370,6 @@ header .header__nav .header__nav-link a:hover::after {
     font-size: var(--fs-small);
     line-height: 1.5rem;
     color: var(--sub-heading-color);
-    cursor: pointer;
 }
 
 .contact .contact__form .category-service .plus-rotate-icon {
@@ -475,7 +476,6 @@ header .header__nav .header__nav-link a:hover::after {
     height: 1.5rem;
     padding: 0.125rem;
     position: relative;
-    cursor: pointer;
 }
 
 .contact .social__link .social__link-icon {
@@ -484,7 +484,6 @@ header .header__nav .header__nav-link a:hover::after {
     left: 0;
     right: 0;
     bottom: 0;
-    cursor: pointer;
     z-index: 2;
     transition: all ease-in-out 0.35s;
     opacity: 0;
@@ -508,45 +507,25 @@ header .header__nav .header__nav-link a:hover::after {
     width: 100%;
     height: 100%;
     vertical-align: middle;
-    cursor: pointer;
 }
 
+/* Responive */
 @media (min-width: 576px) {
-    header .wrapper {
-        height: 6.25rem;
-        padding: 1.25rem 0;
-    }
+    
 }
 
-@media (min-width: 576px) and (max-width: 1199px) {
-    .contact.wrapper {
-        width: 53.125rem;
-        padding: 6.25rem 0;
-        overflow: visible;
-    }
-
-    .contact .quote__heading {
-        display: none;
-    }
-
-    .contact .quote__heading-tab {
-        display: block;
-        margin-bottom: 4.375rem;
-        font-family: 'Gilroy-Bold';
-        font-size: var(--fs-xbold);
-        line-height: 3.5625rem;
-        color: var(--main-black-color-100);
-        text-align: center;
-    }
-
-    .contact .contact__form {
-        padding: 5rem 2.1875rem 2.5rem;
-    }
+@media (min-width: 768px) {
+    
 }
 
-@media (min-width: 576px) and (max-width: 899px) {
-    .contact.wrapper {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
+@media (min-width: 900px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 1778px) {
+    
 }

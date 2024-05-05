@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    cursor: default;
 }
 
 :root {
@@ -52,6 +51,10 @@ a {
     cursor: pointer;
 }
 
+button {
+    cursor: pointer;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -71,6 +74,10 @@ body {
     background-color: var(--main-bg-color-100);
 }
 
+.cursor-default {
+    cursor: default;
+}
+
 .wrapper {
     width: 24.375rem;
     max-width: 100%;
@@ -78,6 +85,11 @@ body {
     padding-right: 0.9375rem;
     margin: 0 auto;
     overflow: hidden;
+}
+
+header .wrapper {
+    width: 100%;
+    max-width: 108.125rem;
 }
 
 .wrapper-flex {
@@ -120,34 +132,30 @@ body {
 .rectangle-25 {
     width: 27.5rem;
     max-width: 25%;
+    padding: 0.9375rem;
 }
 
 .rectangle-33 {
     width: 36.666667rem;
     max-width: 33.333333%;
+    padding: 0.9375rem;
 }
 
 .rectangle-50 {
     width: 55rem;
     max-width: 50%;
+    padding: 0.9375rem;
 }
 
 .rectangle-75 {
     width: 82.5rem;
     max-width: 75%;
+    padding: 0.9375rem;
 }
 
 .rectangle-100 {
     width: 110rem;
     max-width: 100%;
-}
-
-.rectangle-0,
-.rectangle-25,
-.rectangle-33,
-.rectangle-50,
-.rectangle-75,
-.rectangle-100 {
     padding: 0.9375rem;
 }
 
@@ -183,17 +191,19 @@ body {
     margin-right: 1.875rem;
 }
 
-/* Tablet */
+/* Responive */
 @media (min-width: 576px) {
     .wrapper {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .wrapper {
         width: 53.125rem;
-        max-width: 100%;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-    }
-
-    header .wrapper {
-        width: 100%;
     }
 
     .rectangle-tab-0 {
@@ -203,34 +213,30 @@ body {
     .rectangle-tab-25 {
         width: 27.5rem;
         max-width: 25%;
+        padding: 0.9375rem;
     }
 
     .rectangle-tab-33 {
         width: 36.666667rem;
         max-width: 33.333333%;
+        padding: 0.9375rem;
     }
 
     .rectangle-tab-50 {
         width: 55rem;
         max-width: 50%;
+        padding: 0.9375rem;
     }
 
     .rectangle-tab-75 {
         width: 82.5rem;
         max-width: 75%;
+        padding: 0.9375rem;
     }
 
     .rectangle-tab-100 {
         width: 110rem;
         max-width: 100%;
-    }
-
-    .rectangle-tab-0,
-    .rectangle-tab-25,
-    .rectangle-tab-33,
-    .rectangle-tab-50,
-    .rectangle-tab-75,
-    .rectangle-tab-100 {
         padding: 0.9375rem;
     }
 
@@ -254,7 +260,6 @@ body {
 @media (min-width: 1200px) {
     .wrapper {
         width: 108.125rem;
-        max-width: 100%;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -266,34 +271,30 @@ body {
     .rectangle-pc-25 {
         width: 27.5rem;
         max-width: 25%;
+        padding: 0.9375rem;
     }
 
     .rectangle-pc-33 {
         width: 36.666667rem;
         max-width: 33.333333%;
+        padding: 0.9375rem;
     }
 
     .rectangle-pc-50 {
         width: 55rem;
         max-width: 50%;
+        padding: 0.9375rem;
     }
 
     .rectangle-pc-75 {
         width: 82.5rem;
         max-width: 75%;
+        padding: 0.9375rem;
     }
 
     .rectangle-pc-100 {
         width: 110rem;
         max-width: 100%;
-    }
-
-    .rectangle-pc-0,
-    .rectangle-pc-25,
-    .rectangle-pc-33,
-    .rectangle-pc-50,
-    .rectangle-pc-75,
-    .rectangle-pc-100 {
         padding: 0.9375rem;
     }
 

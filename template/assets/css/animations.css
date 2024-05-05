@@ -28,7 +28,6 @@
     background-color: var(--icon-color);
     transition: all ease-in-out 0.35s;
     transform: rotate(-90deg);
-    cursor: pointer;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -41,7 +40,6 @@
     height: var(--height);
     background-color: var(--icon-color);
     transition: all ease-in-out 0.35s;
-    cursor: pointer;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -84,7 +82,6 @@
     background-color: var(--main-black-color-100);
     border-radius: 50%;
     transition: all ease-in-out 0.35s;
-    cursor: pointer;
 }
 
 .circle-rotate-icon-active .circle-rotate-icon .circle-icon {
@@ -179,7 +176,6 @@
     line-height: 1.5rem;
     color: var(--main-black-color-100);
     transition: all ease-in-out 0.25s;
-    cursor: pointer;
 }
 
 .arrow-right-link .arrow-right-link__icon {
@@ -187,7 +183,6 @@
     padding-top: 0.875rem;
     color: var(--main-black-color-100);
     transition: all ease-in-out 0.25s;
-    cursor: pointer;
 }
 
 .arrow-right-link:hover .arrow-right-link__text {
@@ -224,7 +219,6 @@
     height: 2px;
     background-color: var(--bg-light);
     transition: all ease-in-out 0.35s;
-    cursor: pointer;
 }
 
 .arrow-right-translate .arrow-right-translate__right {
@@ -238,7 +232,6 @@
     color: var(--bg-light);
     opacity: 0;
     transition: all ease-in-out 0.35s;
-    cursor: pointer;
 }
 
 .arrow-right-translate-hover:hover .arrow-right-translate .arrow-right-translate__line {
@@ -295,7 +288,6 @@
     box-shadow: none;
     height: 5.9375rem;
     padding: 0;
-    cursor: pointer;
 }
 
 .accordion .accordion-item .accordion-button::after {
@@ -305,13 +297,11 @@
 .accordion .accordion-item .accordion-button .accordion-button__left {
     padding-left: 1rem;
     padding-right: 2.5rem;
-    cursor: pointer;
 }
 
 .accordion .accordion-item .accordion-button .accordion-button__title {
     flex: 1;
     padding: 0 0.625rem;
-    cursor: pointer;
 }
 
 .accordion .accordion-item .accordion-button .accordion-button__title h4 {
@@ -320,7 +310,6 @@
     line-height: 1.875rem;
     color: var(--main-black-color-100);
     transition: all ease-in-out 0.25s;
-    cursor: pointer;
     width: fit-content;
 }
 
@@ -331,7 +320,6 @@
 .accordion .accordion-item .accordion-button .accordion-button__right {
     padding-right: 4rem;
     height: 1.0625rem;
-    cursor: pointer;
 }
 
 .accordion .accordion-item .accordion-body {

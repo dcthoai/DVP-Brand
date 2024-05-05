@@ -147,19 +147,16 @@ header {
     line-height: 0;
     border: none;
     background-color: transparent;
-    cursor: pointer;
 }
 
 .suggestion .suggestion__header .suggestion__header-control button svg {
     height: 0.8125rem;
-    cursor: pointer;
 }
 
 .suggestion .suggestion__header .suggestion__header-control button path,
 .suggestion .suggestion__header .suggestion__header-control button rect {
     fill: var(--main-black-color-100);
     transition: all ease-in-out 0.3s;
-    cursor: pointer;
 }
 
 .suggestion .suggestion__header .suggestion__header-control button:hover path,
@@ -179,7 +176,6 @@ header {
     height: 100%;
     vertical-align: middle;
     transition: all ease-in-out 0.35s;
-    cursor: pointer;
 }
 
 .suggestion .suggestion__content .project:hover img {
@@ -201,7 +197,6 @@ header {
     font-size: var(--fs-bold);
     line-height: 2.25rem;
     color: var(--main-black-color-100);
-    cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -233,8 +228,23 @@ header {
     color: var(--main-black-color-100);
 }
 
-/* @media (min-width: 768px) and (max-width: 1199px) {
-    .project-info .project-info__heading {
-        text-align: center;
-    }
-} */
+/* Responive */
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 900px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 1778px) {
+    
+}

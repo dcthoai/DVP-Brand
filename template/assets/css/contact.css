@@ -211,3 +211,24 @@ header {
     -moz-text-stroke-color: var(--main-black-color-100);
     -ms-text-stroke-color: var(--main-black-color-100);
 }
+
+/* Responive */
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 900px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 1778px) {
+    
+}

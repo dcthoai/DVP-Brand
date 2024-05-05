@@ -101,7 +101,6 @@ header {
     font-size: var(--fs-bold);
     line-height: 2.25rem;
     transition: all ease-in-out 0.35s;
-    cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -179,21 +178,23 @@ header {
     margin-right: 1.875rem;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+/* Responive */
+@media (min-width: 576px) {
+    
+}
 
-    /* Partners */
-    .partners .wrapper {
-        width: 45rem;
-        padding: 3.4375rem 0;
-    }
+@media (min-width: 768px) {
 
-    .partners .scroll-wrapper .scroll-wrapper__content-item img:first-child {
-        margin-bottom: 1.875rem;
-        margin-right: 0;
-    }
+}
 
-    .partners .scroll-wrapper .scroll-wrapper__content-item {
-        flex-direction: column;
-        margin-left: 1.875rem;
-    }
+@media (min-width: 900px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 1778px) {
+    
 }

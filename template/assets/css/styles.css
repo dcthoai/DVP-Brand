@@ -203,41 +203,6 @@ header .header__nav .header__nav-link a:hover::after {
 /* End: Footer */
 
 /* Banner */
-.banner {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background-color: var(--main-bg-color-30);
-}
-
-.banner .banner__bg {
-    width: 100%;
-    height: 100%;
-    background-color: var(--main-yellow-color-100);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-}
-
-.banner .banner__bg .banner__bg-eclipse1 {
-    position: absolute;
-    z-index: 9;
-}
-
-.banner .banner__bg .banner__bg-eclipse2 {
-    position: absolute;
-    z-index: 9;
-}
-
-.banner .banner__bg .banner__bg-eclipse3 {
-    position: absolute;
-    z-index: 9;
-}
-
 .banner .banner__text {
     position: absolute;
     top: 50%;
@@ -521,6 +486,96 @@ header .header__nav .header__nav-link a:hover::after {
     height: 100%;
     vertical-align: middle;
 }
+
+/* Navbar mobile */
+.moblie-nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1010;
+}
+
+.moblie-nav .nav-bg {
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.moblie-nav .nav-bg svg {
+    width: 22.5rem;
+    height: 2.25rem;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    backdrop-filter: blur(4px);
+}
+
+.moblie-nav .nav {
+    width: 22.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.moblie-nav .nav .nav-button {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: var(--main-bg-color-30);
+    border-radius: 50%;
+    box-shadow: 0 0 1rem 0.125rem var(--sub-heading-color-20);
+    cursor: pointer;
+}
+
+.moblie-nav .nav .nav-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.moblie-nav .nav .navbar {
+    width: calc(50% - 3rem);
+    padding: 0;
+}
+
+.moblie-nav .nav .navbar__item {
+    cursor: pointer;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.moblie-nav .nav .navbar__item img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.moblie-nav .nav .navbar__item.active {
+    background: linear-gradient(-180deg, var(--main-yellow-color-50), var(--main-yellow-color-0));
+}
+
+.moblie-nav .nav .navbar__item.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--main-yellow-color-100);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* End: Navbar mobile */
 
 /* Responive */
 @media (min-width: 576px) {

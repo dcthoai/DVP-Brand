@@ -5,9 +5,9 @@
 }
 
 :root {
-    --main-yellow-color-10: rgba(240, 169, 0, 0.1);
-    --main-yellow-color-20: rgba(240, 169, 0, 0.2);
+    --main-yellow-color-0: rgba(240, 169, 0, 0);
     --main-yellow-color-30: rgba(240, 169, 0, 0.3);
+    --main-yellow-color-50: rgba(240, 169, 0, 0.5);
     --main-yellow-color-70: rgba(240, 169, 0, 0.7);
     --main-yellow-color-100: #f0a900;
     --main-black-color-10: rgba(17, 24, 18, 0.1);

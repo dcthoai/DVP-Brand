@@ -455,14 +455,14 @@
 .banner .banner__bg .banner__bg-eclipse1,
 .banner .banner__bg .banner__bg-eclipse2,
 .banner .banner__bg .banner__bg-eclipse3 {
-    filter: blur(200px);
+    filter: blur(50px);
 }
 
 .banner .banner__bg .banner__bg-eclipse1 {
-    width: 150%;
+    width: 110%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background-color: #eebd00;
+    background-color: #ffcd0e;
     position: absolute;
     z-index: 8;
     transform: translate(-50%, -50%);
@@ -472,7 +472,7 @@
 }
 
 .banner .banner__bg .banner__bg-eclipse2 {
-    width: 100%;
+    width: 65%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: #f09e00;
@@ -485,10 +485,10 @@
 }
 
 .banner .banner__bg .banner__bg-eclipse3 {
-    width: 75%;
+    width: 40%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background-color: #f09600;
+    background-color: #ed8d1a;
     position: absolute;
     z-index: 7;
     transform: translate(-50%, -50%);
@@ -576,15 +576,15 @@
 /* Responive */
 @media (min-width: 576px) {
     .banner .banner__bg .banner__bg-eclipse1 {
-        width: 100%;
+        width: 85%;
     }
 
     .banner .banner__bg .banner__bg-eclipse2 {
-        width: 80%;
+        width: 60%;
     }
 
     .banner .banner__bg .banner__bg-eclipse3 {
-        width: 60%;
+        width: 35%;
     }
 }
 
@@ -635,19 +635,31 @@
     .partners .scroll-wrapper .scroll-wrapper__content-item img:nth-child(2) {
         margin-top: 1.875rem;
     }
-}
 
-@media (min-width: 900px) {
     .banner .banner__bg .banner__bg-eclipse1 {
-        width: 80%;
+        background-color: #eebd00;
     }
 
     .banner .banner__bg .banner__bg-eclipse2 {
-        width: 60%;
+        background-color: #f09e00;
     }
 
     .banner .banner__bg .banner__bg-eclipse3 {
-        width: 40%;
+        background-color: #f09600;
+    }
+
+    .banner .banner__bg .banner__bg-eclipse1,
+    .banner .banner__bg .banner__bg-eclipse2,
+    .banner .banner__bg .banner__bg-eclipse3 {
+        filter: blur(100px);
+    }
+}
+
+@media (min-width: 900px) {
+    .banner .banner__bg .banner__bg-eclipse1,
+    .banner .banner__bg .banner__bg-eclipse2,
+    .banner .banner__bg .banner__bg-eclipse3 {
+        filter: blur(200px);
     }
 }
 

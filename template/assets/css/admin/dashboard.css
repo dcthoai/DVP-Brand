@@ -101,7 +101,12 @@
 }
 
 .content .content-body .service-list {
-    height: 30rem;
+    max-height: 30rem;
+    overflow-y: auto;
+}
+
+.content .content-body .list-staff {
+    max-height: 30rem;
     overflow-y: auto;
 }
 

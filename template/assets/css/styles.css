@@ -538,7 +538,7 @@ header.active .header__nav .header__nav-link a {
     background: linear-gradient(-180deg, var(--main-yellow-color-50), var(--main-yellow-color-0));
 }
 
-.mobile-nav .navbar .navbar__item::after {
+.mobile-nav .navbar .navbar__item:not(.nav-menu)::after {
     content: "";
     display: block;
     width: 100%;

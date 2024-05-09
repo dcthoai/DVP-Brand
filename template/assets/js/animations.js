@@ -65,3 +65,37 @@ if (scrollWrapper){
     });
 }
 // End: Animation scroll
+
+// Change text color for header when scroll
+const header = document.querySelector('header');
+const bannerH = document.querySelector('.banner').offsetHeight;
+
+window.addEventListener("scroll", function() {
+    let scrollY = window.scrollY;
+
+    if (scrollY >= bannerH) {
+        header.classList.add('active');
+    } else {
+        header.classList.remove('active');
+    }
+});
+
+// Controll mobile nav
+const homeIconBtn = document.getElementById('home-icon');
+const iconBtnMobileNav = document.querySelectorAll('.mobile-nav .navbar__item:not(:first-child)');
+const formsMobileNav = document.querySelectorAll('.mobile-nav .navbar__form');
+
+iconBtnMobileNav.forEach((iconButton, index) => {
+    iconButton.addEventListener('click', () => {
+        formsMobileNav.forEach((form, i) => {
+            if (i != index) {
+                iconBtnMobileNav[i].classList.remove('active');
+                form.classList.remove('active');
+            }
+        });
+    
+        homeIconBtn.classList.remove('active');
+        iconButton.classList.toggle('active');
+        formsMobileNav[index].classList.toggle('active');
+    });
+});

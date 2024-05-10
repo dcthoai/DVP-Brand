@@ -100,18 +100,11 @@
     box-shadow: 0 0 0.5rem 0.125rem #00000023; 
 }
 
-.content .content-body .service-list {
+.content .content-body .service-list,
+.content .content-body .list-staff,
+.content .content-body .list-job,
+.content .content-body .list-customer {
     max-height: 30rem;
-    overflow-y: auto;
-}
-
-.content .content-body .list-staff {
-    max-height: 30rem;
-    overflow-y: auto;
-}
-
-.content .content-body .list-job {
-    max-height: 20rem;
     overflow-y: auto;
 }
 

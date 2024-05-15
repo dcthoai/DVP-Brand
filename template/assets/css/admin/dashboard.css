@@ -65,12 +65,15 @@
 .content .content-wrapper{
     flex: 1;
     padding-top: 4rem;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
 .content .content-wrapper .content-body {
     background-color: var(--bg-light);
     border-radius: 0.5rem;
+    width: 100%;
+    height: calc(100vh - 10rem);
+    overflow-y: scroll;
 }
 
 .content .content-wrapper .content-body label {
@@ -105,6 +108,11 @@
 .content .content-body .list-job,
 .content .content-body .list-customer {
     max-height: 30rem;
+    overflow-y: auto;
+}
+
+.content .content-body .list-project {
+    max-height: 85vh;
     overflow-y: auto;
 }
 

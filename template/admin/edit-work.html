@@ -212,10 +212,10 @@
             </div>
         </div>
 
-        <div class="vh-100 content-wrapper px-2 px-lg-4">
+        <div class="vh-100 content-wrapper px-0 px-lg-4">
             <h4 class="p-3 ps-lg-0 fs-4 text-light fw-semibold">Chỉnh sửa trang công việc</h4>
 
-            <div class="content-body px-0 py-4 px-md-4">
+            <div class="content-body px-3 py-4 px-md-4">
                 <div class="row">
                     <div class="col-12 col-lg-10 col-xl-8 col-xxl-6">
                         <!-- Story -->
@@ -268,12 +268,132 @@
                                     <div class="col-1"><a href="" class="text-danger">Xóa</a></div>
                                 </div>
                             </div>
+
+                            <h4 class="mt-4">Thêm danh mục dự án mới</h4>
+                            <label for="">Tên danh mục</label><br>
+                            <input type="text" placeholder="Branding"><br>
+                            <button class="btn btn-primary px-4 fs-5 mt-4" type="button">Submit</button>
+                            <button class="btn btn-danger px-4 fs-5 mt-4" type="button">Hủy</button>
                         </div>
 
                         <div class="projects">
                             <h4 class="mt-5">Chỉnh sửa danh sách dự án</h4>
+                            <button type="button" class="btn btn-primary mt-4">Thêm mới</button>
 
+                            <div class="list-project mt-4 border pe-3">
+                                <div class="w-100 p-3 border-bottom">
+                                    <div class="row align-items-center">
+                                        <div class="col-2"><img src="../assets/img/projects/project-1.png" alt="" class="w-75"></div>
+                                        <div class="col-8">Dự án xây dựng website Bumindo</div>
+                                        <div class="col-1"><a href="">Sửa</a></div>
+                                        <div class="col-1"><a href="" class="text-danger">Xóa</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="w-100 p-3 border-bottom">
+                                    <div class="row align-items-center">
+                                        <div class="col-2"><img src="../assets/img/projects/project-1.png" alt="" class="w-75"></div>
+                                        <div class="col-8">Dự án xây dựng website Bumindo</div>
+                                        <div class="col-1"><a href="">Sửa</a></div>
+                                        <div class="col-1"><a href="" class="text-danger">Xóa</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="w-100 p-3 border-bottom">
+                                    <div class="row align-items-center">
+                                        <div class="col-2"><img src="../assets/img/projects/project-1.png" alt="" class="w-75"></div>
+                                        <div class="col-8">Dự án xây dựng website Bumindo</div>
+                                        <div class="col-1"><a href="">Sửa</a></div>
+                                        <div class="col-1"><a href="" class="text-danger">Xóa</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="w-100 p-3 border-bottom">
+                                    <div class="row align-items-center">
+                                        <div class="col-2"><img src="../assets/img/projects/project-1.png" alt="" class="w-75"></div>
+                                        <div class="col-8">Dự án xây dựng website Bumindo</div>
+                                        <div class="col-1"><a href="">Sửa</a></div>
+                                        <div class="col-1"><a href="" class="text-danger">Xóa</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-project">
+                            <h4 class="mt-5">Thêm dự án mới</h4>
                             
+                            <label for="">Thumbnail</label>
+                            <div class="banner__img w-50 my-4 border">
+                                <i class="fa-solid fa-xmark"></i>
+                                <img class="w-100" src="../assets/img/carousel/carousel-2.png" alt="">
+                            </div>
+                            <input type="file" class="w-100" name="" id=""><br>
+
+                            <label for="">Danh mục sản phẩm</label><br>
+                            <div class="list-category">
+                                <div class="category-item d-flex align-items-center p-2">
+                                    <input type="checkbox" name="" id="">
+                                    <h6 class="m-0 ms-3">Branding</h6>
+                                </div>
+
+                                <div class="category-item d-flex align-items-center p-2">
+                                    <input type="checkbox" name="" id="">
+                                    <h6 class="m-0 ms-3">Branding</h6>
+                                </div>
+
+                                <div class="category-item d-flex align-items-center p-2">
+                                    <input type="checkbox" name="" id="">
+                                    <h6 class="m-0 ms-3">Branding</h6>
+                                </div>
+                            </div>
+                            
+                            <label for="" >Sub title</label><br>
+                            <input type="text" class="w-100" placeholder="The story of DVP" value=""><br>
+                            <label for="" >Title</label><br>
+                            <input type="text" class="w-100" placeholder="Câu chuyện về DVP" value=""><br>
+
+                            <label for="" >Heading </label><br>
+                            <input type="text" class="w-100" placeholder="The story of DVP" value=""><br>
+                            <label for="" >Đoạn văn 1</label><br>
+                            <textarea class="w-100 p-2" name="" id="" rows="3">Đoạn văn chữ thường</textarea><br>
+                            <label for="" >Đoạn văn 2</label><br>
+                            <textarea class="w-100 p-2" name="" id="" rows="3">Đoạn văn chữ thường</textarea><br>
+
+                            <label for="" >Tên khách hàng</label><br>
+                            <input type="text" class="w-100" placeholder="The story of DVP" value=""><br>
+                            <label for="" >Ngày hoàn thành</label><br>
+                            <input type="date" class="w-100"><br>
+
+                            <label for="" >Link demo sản phẩm</label><br>
+                            <input type="text" class="w-100" placeholder="The story of DVP" value=""><br>
+
+                            <label for="" >Hình ảnh dự án</label><br>
+                            <div class="row mt-5">
+                                <div class="col-12 py-2"><img class="w-100" src="../assets/img/cateloge/cataloge1.png" alt=""></div>
+                                <div class="col-12 py-2"><img class="w-100" src="../assets/img/cateloge/cataloge2.png" alt="" srcset=""></div>
+                                <div class="col-6 py-2"><img class="w-100" src="../assets/img/cateloge/cataloge3.png" alt=""></div>
+                                <div class="col-6 py-2"><img class="w-100" src="../assets/img/cateloge/cataloge4.png" alt=""></div>
+                                <div class="col-12 py-2"><img class="w-100" src="../assets/img/cateloge/cataloge5.png" alt=""></div>
+                                <div class="col-6 py-2"><img class="w-100" src="../assets/img/cateloge/cataloge6.png" alt="" srcset=""></div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12 py-2"><img class="w-100" src="../assets/img/cateloge/cataloge3.png" alt="" srcset=""></div>
+                                        <div class="col-12 py-2"><img class="w-100" src="../assets/img/cateloge/cataloge4.png" alt="" srcset=""></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input class="my-2 mt-5" type="file" name="" id=""><br>
+                            <input class="my-2" type="file" name="" id=""><br>
+                            <input class="my-2" type="file" name="" id=""><br>
+                            <input class="my-2" type="file" name="" id=""><br>
+                            <input class="my-2" type="file" name="" id=""><br>
+                            <input class="my-2" type="file" name="" id=""><br>
+                            <input class="my-2" type="file" name="" id=""><br>
+                            <input class="my-2" type="file" name="" id=""><br>
+
+                            <button class="btn btn-primary px-4 fs-5 mt-4" type="button">Submit</button>
+                            <button class="btn btn-danger px-4 fs-5 mt-4" type="button">Hủy</button>
                         </div>
                     </div>
                 </div>

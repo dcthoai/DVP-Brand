@@ -216,10 +216,18 @@ header .header__nav .header__nav-link a {
 }
 
 .quote .quote__content .pack__content {
-    padding: 2rem 0 1.5rem;
+    padding: 2rem 0 0;
     margin: 0 1.5rem;
-
     border-bottom: 0.0625rem solid var(--sub-heading-color-30);
+}
+
+.quote .quote__content .pack__content li span.line {
+    width: 2rem;
+    height: 0.25rem;
+    margin: 0.6875rem auto;
+    border-radius: 0.125rem;
+    background-color: var(--sub-heading-color);
+    text-align: center;
 }
 
 .quote .quote__content .pack__content ul li {
@@ -229,6 +237,7 @@ header .header__nav .header__nav-link a {
     font-size: 1rem;
     line-height: 1.5rem;
     color: var(--main-black-color-100);
+    margin-bottom: 0.5rem;
 }
 
 .quote .quote__content .pack__content ul .icon {
@@ -245,18 +254,22 @@ header .header__nav .header__nav-link a {
 .quote .quote__content .pack__btn {
     padding: 1.5rem;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote .quote__content .pack__btn a {
+    display: block;
+    width: fit-content;
     border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
     background-color: var(--main-yellow-color-100);
     border: none;
     font-family: "Gilroy-Medium";
-    font-size: 1.125rem;
-    line-height: 1.25rem;
-    height: 2.75rem;
+    font-size: 1rem;
+    line-height: 2.375rem;
+    height: 2.5rem;
     color: var(--bg-light);
 }
 

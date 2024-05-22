@@ -163,7 +163,6 @@ header .header__nav .header__nav-link a {
 
 .quote .quote__content .pack .pack__header-info {
     margin-top: 0.5rem;
-    padding-left: 1rem;
 }
 
 .quote .quote__content .pack .pack__header-info h4 {
@@ -241,6 +240,7 @@ header .header__nav .header__nav-link a {
 }
 
 .quote .quote__content .pack__content ul .icon {
+    flex-shrink: 0;
     padding: 0.25rem 0;
     width: 1rem;
     height: 1rem;
@@ -472,7 +472,9 @@ header .header__nav .header__nav-link a {
 
 /* Responive */
 @media (min-width: 576px) {
-
+    .quote .quote__content .pack .pack__header-info {
+        padding-left: 1rem;
+    }
 }
 
 @media (min-width: 768px) {

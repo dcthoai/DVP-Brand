@@ -4,17 +4,15 @@ const accordionButtons = document.querySelectorAll('.accordion-button');
 
 accordionButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        if (accordionButtons[index].classList.contains('plus-rotate-icon-active')) {
-            accordionButtons[index].classList.remove('plus-rotate-icon-active');
-        } else {
-            accordionButtons[index].classList.add('plus-rotate-icon-active');
-        }
+        accordionButtons.forEach((btn, i) => {
+            if (i != index){
+                btn.classList.remove('plus-rotate-icon-active');
+                btn.classList.remove('circle-rotate-icon-active');
+            }
+        });
 
-        if (accordionButtons[index].classList.contains('circle-rotate-icon-active')) {
-            accordionButtons[index].classList.remove('circle-rotate-icon-active');
-        } else {
-            accordionButtons[index].classList.add('circle-rotate-icon-active');
-        }
+        button.classList.toggle('plus-rotate-icon-active');
+        button.classList.toggle('circle-rotate-icon-active');
     })
 });
 
@@ -61,9 +59,24 @@ if (scrollWrapper){
             if (translateX >= minTranslateX && translateX <= 0) {
                 scrollWrapperContent.style.transform = `translateX(${translateX}px)`;
             }
-            // Cập nhật giá trị của mouseMoveX
+
             mouseMoveX = newMouseMoveX;
         }
     });
 }
 // End: Animation scroll
+
+// Change text color for header when scroll
+const header = document.querySelector('header');
+const banner = document.querySelector('.banner');
+const bannerH = banner ? banner.offsetHeight : 0;
+
+window.addEventListener("scroll", function() {
+    let scrollY = window.scrollY;
+
+    if (scrollY >= bannerH) {
+        header.classList.add('active');
+    } else {
+        header.classList.remove('active');
+    }
+});

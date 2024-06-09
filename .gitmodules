@@ -1,0 +1,6 @@
+[submodule "DVP-Frontend"]
+	path = DVP-Frontend
+	url = https://github.com/dcthoai/DVP-Frontend.git
+[submodule "DVP-Backend"]
+	path = DVP-Backend
+	url = https://github.com/dcthoai/DVP-Backend.git
